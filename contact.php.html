@@ -1,5 +1,6 @@
 ---
-permalink: /thanks/
+layout: empty
+permalink: /contact.php.html
 ---
 
 	<head>
@@ -46,9 +47,38 @@ permalink: /thanks/
     </div>
 <div id="container">
 <div id="content">
+        <div id="address"><p>If you would like to enquire about prices, availability, commissioning, or any additional information about the work, please email or phone. Thank you.</p>
+	<br />Tel: 07715207784    </div>
 
+    	 <form action="/thanks/" method="post" id="contact-form">
 
-    	 <p>Thank you for your message!</p>
+      <fieldset>
+
+            <input type="hidden" name="_to" value="lucy@lucytennyson.com">
+            <input type="hidden" name="_cc" value="a.ward@eyedivision.com">
+            <input type="hidden" name="_subject" value="Web form">
+            <p>
+            <label for="name">Name:</label>
+            <input type="text" name="name">
+            </p>
+            <p>
+            <label for="_replyto">Email:</label>
+            <input type="text" name="_replyto">
+            </p>
+            <p>
+            <label>Message</label>
+            <textarea name="message"></textarea>
+            </p>
+            {% if site.recaptcha_site_key %}
+            <div class="g-recaptcha" data-sitekey="{{ site.recaptcha_site_key }}"></div>
+            {% endif %}
+        <p>
+            <input type="submit" value="Send message">
+            </p>
+      </fieldset>
+
+      </form>
+
 
 	</div>	<!-- end content -->
 	</div><!-- end container -->

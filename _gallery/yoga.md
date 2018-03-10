@@ -1,17 +1,23 @@
 ---
-title: Test 2
-description_markdown: Testing images
+title: "Yoga"
+description_markdown: 
 homepage_description_markdown: 
 _gallery_date:
 frontpage: true
-permalink: /gallery/test2/
+permalink: /gallery/yoga/
 display_title: true
 archive: false
-main_image_path: /assets/images/IMG_3317.jpg
+main_image_path: /assets/images/56f4472f6adf2.jpg
 images:
-  - image_path: '/assets/images/Keen of Hamar, Unst.jpg'
-    image_title: Sky wall
-    image_description: sky wall
+  - image_path: '/assets/images/56f44801e8bd2.jpg'
+    image_title: "Untitled"
+    image_description: "Linocut"
+  - image_path: '/assets/images/56f448d31f61e.jpg'
+    image_title: "Untitled"
+    image_description: Mixed media"
+  - image_path: '/assets/images/56f44905b8a31.jpg'
+    image_title: "Untitled"
+    image_description: "Mixed media"
 _options:
   image_path:
     width: 1200

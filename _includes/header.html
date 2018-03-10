@@ -1,33 +1,52 @@
 <header class="navigation" role="banner">
   <div class="navigation-wrapper">
-    <a href="{{ site.baseurl }}/" class="logo">
+    <a href="{{ site.baseurl }}/" class="logo" title="Return home">
       {% if site.logo %}
-      <img src="{{ site.logo | prepend: site.baseurl }}" alt="{{ site.title }}">
+        {% include img.html src=site.logo width=600 alt=site.title %}
+      <!-- <img src="{{ site.logo | prepend: site.baseurl }}" alt="{{ site.title }}"> -->
       {% else %}
-      <span>{{ site.title }}</span>
+      <h1>{{ site.title }}</h1>
+      <div class="subtitle">{{ site.subtitle }}</div>
       {% endif %}
     </a>
     <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">
-      <i class="fa fa-bars"></i>
+      <span class="menu-title">MENU</span> <svg class="icon icon-menu"><use xlink:href="#icon-reorder" /></svg>
     </a>
     <nav role="navigation">
-      <ul id="js-navigation-menu" class="navigation-menu show">
+      <ul id="js-navigation-menu" class="dropdown navigation-menu show">
+
         {% for link in site.data.nav %}
-          <li class="nav-link{% if page.url == link.href %} active{% endif %}"><a href="{{ link.href | prepend: site.baseurl }}">{{ link.title }}</a>
+
+          {% if link.subcategories != null %}
+
+          <!-- Drop down v2 -->
+          <li class="nav-link{% if page.url == link.href %} active{% endif %} dropdown-container">
+
+              <a href="#menu" class="dropdown-button">{{ link.title }}</a>
+
+              <ul class="dropdown-menu dropdown-select">
+
+                {% for subcategory in link.subcategories %}
+
+                     <li><a href="{{ subcategory.subhref | prepend: site.baseurl }}">{{ subcategory.subtitle }}</a></li>
+
+                {% endfor %}
+
+              </ul>
+
+
+          </li>
+
+          {% else %}
+
+          <li class="nav-link{% if page.url == link.href %} active{% endif %} {% if link.subcategories != null %} more{%endif %}">
+            <a href="{{ link.href | prepend: site.baseurl }}"  class="">{{ link.title }}</a>
+          </li>
+
+          {% endif %}
+
         {% endfor %}
-        
-        {% if false %}
-        <!-- alternative social links in nav menu -->
-          {% for social in site.social %}
-            {% if social.url != null %}
-            <li class="nav-link social">
-              <a href="{{ social.url }}" title="{{ social.desc }}">
-                <i class="fa fa-{{ social.icon }}"></i>
-              </a>
-            </li>
-            {% endif %}
-          {% endfor %}
-        {% endif %}
+
       </ul>
     </nav>
   </div>

@@ -1,26 +1,36 @@
 ---
-title: "Yoga"
+title: "Birmingham 7"
 description_markdown: 
 homepage_description_markdown: 
 _gallery_date:
-frontpage: true
-permalink: /gallery/yoga/
+frontpage: false
+permalink: /gallery/photographs-in-sequences/birmingham-7/
 display_title: true
 archive: false
 main_image_path: 
 images:
-  - image_path: '/assets/images/56f4472f6adf2.jpg'
+  - image_path: '/assets/images/4fa780f40a634.jpg'
     image_title: "Untitled"
-    image_description: "Linocut"
-  - image_path: '/assets/images/56f44801e8bd2.jpg'
+    image_description: "" 
+  - image_path: '/assets/images/4fa781676e634.jpg'
     image_title: "Untitled"
-    image_description: "Linocut"
-  - image_path: '/assets/images/56f448d31f61e.jpg'
+    image_description: "" 
+  - image_path: '/assets/images/4fa781807cb8c.jpg'
     image_title: "Untitled"
-    image_description: "Mixed media"
-  - image_path: '/assets/images/56f44905b8a31.jpg'
+    image_description: "" 
+  - image_path: '/assets/images/4fa78190b2d92.jpg'
     image_title: "Untitled"
-    image_description: "Mixed media"
+    image_description: ""
+  - image_path: '/assets/images/4b02edee9707c.jpg'
+    image_title: "Untitled"
+    image_description: ""
+  - image_path: '/assets/images/4fa781b712a27.jpg'
+    image_title: "Untitled"
+    image_description: "" 
+  - image_path: '/assets/images/4fa781c81c0bb.jpg'
+    image_title: "Untitled"
+    image_description: ""
+
 _options:
   image_path:
     width: 1200

@@ -1,5 +1,5 @@
 ---
-title: "Mixed media 2017"
+title: "Mixed media"
 description_markdown: >-
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime voluptate,
   dicta ex incidunt harum id vitae itaque alias voluptates pariatur! Aliquid
@@ -7,7 +7,7 @@ description_markdown: >-
 homepage_description_markdown: 
 frontpage: true
 _gallery_date: 2016-05-01 00:00:00
-permalink: /gallery/mixed-media-2017/
+permalink: /gallery/mixed-media/
 archive: false
 display_title: true
 main_image_path: /assets/images/55d79367e8910.jpg

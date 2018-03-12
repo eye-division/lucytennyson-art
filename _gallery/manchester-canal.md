@@ -1,26 +1,29 @@
 ---
-title: "Yoga"
+title: "Manchester Canal"
 description_markdown: 
 homepage_description_markdown: 
 _gallery_date:
-frontpage: true
-permalink: /gallery/yoga/
+frontpage: false
+permalink: /gallery/photographs-in-sequences/manchester-canal/
 display_title: true
 archive: false
 main_image_path: 
 images:
-  - image_path: '/assets/images/56f4472f6adf2.jpg'
-    image_title: "Untitled"
-    image_description: "Linocut"
-  - image_path: '/assets/images/56f44801e8bd2.jpg'
-    image_title: "Untitled"
-    image_description: "Linocut"
-  - image_path: '/assets/images/56f448d31f61e.jpg'
-    image_title: "Untitled"
-    image_description: "Mixed media"
-  - image_path: '/assets/images/56f44905b8a31.jpg'
-    image_title: "Untitled"
-    image_description: "Mixed media"
+  - image_path: '/assets/images/4b02eb2751e62.jpg'
+    image_title: "9 Oct 2006 14.25"
+    image_description: "" 
+  - image_path: '/assets/images/4b02ecfa90332.jpg'
+    image_title: "9 Oct 2006 14.32"
+    image_description: "" 
+  - image_path: '/assets/images/4b02eda27b698.jpg'
+    image_title: "9 Oct 2006 14.43.30"
+    image_description: "" 
+  - image_path: '/assets/images/4b02edee9707c.jpg'
+    image_title: "9 Oct 2006 14.46"
+    image_description: ""
+  - image_path: '/assets/images/4b02ee2717ecd.jpg'
+    image_title: "9 Oct 2006 14.51"
+    image_description: "" 
 _options:
   image_path:
     width: 1200

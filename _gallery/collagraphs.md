@@ -1,26 +1,21 @@
 ---
-title: "Yoga"
+title: "Collagraphs - summer 2014"
 description_markdown: 
 homepage_description_markdown: 
 _gallery_date:
-frontpage: true
-permalink: /gallery/yoga/
+frontpage: false
+permalink: /gallery/collagraphs/summer-2014/
 display_title: true
 archive: false
 main_image_path: 
 images:
-  - image_path: '/assets/images/56f4472f6adf2.jpg'
-    image_title: "Untitled"
-    image_description: "Linocut"
-  - image_path: '/assets/images/56f44801e8bd2.jpg'
-    image_title: "Untitled"
-    image_description: "Linocut"
-  - image_path: '/assets/images/56f448d31f61e.jpg'
-    image_title: "Untitled"
-    image_description: "Mixed media"
-  - image_path: '/assets/images/56f44905b8a31.jpg'
-    image_title: "Untitled"
-    image_description: "Mixed media"
+  - image_path: '/assets/images/5414b866e7d5d.jpg'
+    image_title: "Canalbridge1"
+    image_description: "" 
+  - image_path: '/assets/images/5414b8958cb39.jpg'
+    image_title: "Canalbridge2"
+    image_description: "" 
+ 
 _options:
   image_path:
     width: 1200

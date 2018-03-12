@@ -1,26 +1,17 @@
 ---
-title: "Yoga"
+title: "Woodcuts"
 description_markdown: 
 homepage_description_markdown: 
 _gallery_date:
-frontpage: true
-permalink: /gallery/yoga/
+frontpage: false
+permalink: /gallery/lino-woodcuts/woodcuts/
 display_title: true
 archive: false
 main_image_path: 
 images:
-  - image_path: '/assets/images/56f4472f6adf2.jpg'
-    image_title: "Untitled"
-    image_description: "Linocut"
-  - image_path: '/assets/images/56f44801e8bd2.jpg'
-    image_title: "Untitled"
-    image_description: "Linocut"
-  - image_path: '/assets/images/56f448d31f61e.jpg'
-    image_title: "Untitled"
-    image_description: "Mixed media"
-  - image_path: '/assets/images/56f44905b8a31.jpg'
-    image_title: "Untitled"
-    image_description: "Mixed media"
+  - image_path: '/assets/images/4fa17404c1495.jpg'
+    image_title: "Table"
+    image_description: "Woodcut - 12 x17cm" 
 _options:
   image_path:
     width: 1200

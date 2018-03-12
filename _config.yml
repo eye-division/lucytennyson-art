@@ -17,7 +17,7 @@ description: Lucy Tennyson art gallery site
 # root of your server.
 baseurl: ""
 # the base hostname & protocol for your site
-url: "http://black-hare.cloudvent.net"
+url: "http://wealthy-dahlia.cloudvent.net"
 logo: "/assets/logo.png"
 headerlogo:
 email: a.ward@eyedivision.com
@@ -32,8 +32,8 @@ highlightjs_theme: "monokai-sublime"
 
 # Image CDN
 imagecdn:
-  #staging: "http://ed-eyegallery-dev.imgix.net"
-  #production: "http://ed-eyegallery.imgix.net"
+  staging: "https://ed-lucytennysonart-dev.imgix.net"
+  #production: "https://ed-lucytennysonart.imgix.net"
 
 # Collections Example
 collections:

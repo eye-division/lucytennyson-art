@@ -7,7 +7,7 @@ frontpage: true
 permalink: /gallery/yoga/
 display_title: true
 archive: false
-main_image_path: 
+main_image_path: '/assets/images/56f4472f6adf2.jpg'
 images:
   - image_path: '/assets/images/56f4472f6adf2.jpg'
     image_title: "Untitled"

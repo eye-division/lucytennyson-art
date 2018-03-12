@@ -1,9 +1,7 @@
 ---
 title: "Mixed media"
 description_markdown: >-
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime voluptate,
-  dicta ex incidunt harum id vitae itaque alias voluptates pariatur! Aliquid
-  expedita rerum autem vel est pariatur, quibusdam consectetur, aliquam!
+  
 homepage_description_markdown: 
 frontpage: true
 _gallery_date: 2016-05-01 00:00:00
@@ -14,10 +12,10 @@ main_image_path: /assets/images/55d79367e8910.jpg
 images:
   - image_path: /assets/images/5728a4289a3c6.jpg
     image_title: "Stones2"
-    image_description: These customers didn't choose Eye Division
+    image_description: 
   - image_path: /assets/images/55d7933329c46.jpg
     image_title: "Clumps"
-    image_description: Experience an ocean of bliss
+    image_description: 
   - image_path: /assets/images/5728a164d6924.jpg
     image_title: "Clumps2"
     image_description: 

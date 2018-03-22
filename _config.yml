@@ -8,7 +8,7 @@ exclude:
   - "/vendor/"
 
 # Site settings
-title: Lucy Tennyson
+title: Lucy Tennyson - artist
 subtitle:
 name: Lucy Tennyson
 description: Lucy Tennyson art gallery site
@@ -33,7 +33,7 @@ highlightjs_theme: "monokai-sublime"
 # Image CDN
 imagecdn:
   staging: "https://ed-lucytennysonart-dev.imgix.net"
-  #production: "https://ed-lucytennysonart.imgix.net"
+  production: "https://ed-lucytennysonart.imgix.net"
 
 # Collections Example
 collections:
@@ -96,29 +96,29 @@ social:
 
   - name: Facebook
     icon: icon-facebook_sign
-    username: eyedivision
-    url: https://www.facebook.com/eyedivision
+    username:
+    url:
     desc: Like on Facebook
     share: true
 
   - name: Instagram
     icon: icon-instagram
-    username: '@eyedivision'
-    url: https://instagram.com/eyedivision
+    username:
+    url:
     desc: Follow me on Instagram
     share: false
 
   - name: Twitter
     icon: icon-twitter_sign
-    username: '@EyeDivision'
-    url: https://twitter.com/EyeDivision
+    username:
+    url:
     desc: Follow us on Twitter
     share: true
 
   - name: Pinterest
     icon: icon-pinterest
     username:
-    url: http://uk.pinterest.com/
+    url:
     desc: Follow me on Pinterest
     share: true
 

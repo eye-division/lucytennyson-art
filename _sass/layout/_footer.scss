@@ -28,9 +28,7 @@
 
 .site-navigation {
     @include span-columns(12);
-    @include media ($small) {
-        @include span-columns(6);
-    }
+
     font-size: 0.9em;
     ul {
         @extend %default-ul;
@@ -43,11 +41,7 @@
     margin-top: 1em;
     text-align: center;
     @include span-columns(12);
-    @include media ($medium) {
-        @include span-columns(6);
-        margin-right: 0;
-        margin-top: 0;
-    }
+
     font-size: 0.9em;
     a {
         text-decoration: underline;
@@ -59,11 +53,7 @@
 .site-contact {
     margin-top: 1em;
     @include span-columns(12);
-    @include media ($small) {
-        @include span-columns(6);
-        margin-top: 0;
-        margin-right: 0;
-    }
+
 
     font-size: 0.9em;
     i {

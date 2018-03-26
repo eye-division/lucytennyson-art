@@ -1,29 +1,17 @@
 ---
-title: "Oxford Canal - Watercolours"
+title: "Current work"
 description_markdown: 
 homepage_description_markdown: 
 _gallery_date:
 frontpage: false
-permalink: /gallery/watercolours/oxford-canal/
+permalink: /current-work/
 display_title: true
 archive: false
 main_image_path: 
 images:
-  - image_path: '/assets/images/5414bd0f10d4f.jpg'
-    image_title: "1"
-    image_description: "" 
-  - image_path: '/assets/images/5414bd3912fef.jpg'
-    image_title: "2"
-    image_description: "" 
-  - image_path: '/assets/images/5414bd667506e.jpg'
-    image_title: "3"
-    image_description: ""
-  - image_path: '/assets/images/5414bd8b80176.jpg'
-    image_title: "4"
-    image_description: ""
-  - image_path: '/assets/images/5414bdb2b1dae.jpg'
-    image_title: "5"
-    image_description: ""    
+  - image_path: ''
+    image_title: ""
+    image_description: 
 _options:
   image_path:
     width: 1200

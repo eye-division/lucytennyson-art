@@ -4,7 +4,7 @@ description_markdown:
 homepage_description_markdown: 
 _gallery_date:
 frontpage: false
-permalink: /gallery/lino-woodcuts/woodcuts/
+permalink: /printmaking/woodcuts/
 display_title: true
 archive: false
 main_image_path: 

@@ -1,19 +1,16 @@
 ---
-title: "Hand pressed linocuts 2014"
+title: "Mythical landscape"
 description_markdown: 
 homepage_description_markdown: 
 _gallery_date:
 frontpage: false
-permalink: /gallery/lino-woodcuts/hand-pressed-linocuts/
+permalink: /mythical-landscape/
 display_title: true
 archive: false
 main_image_path: 
 images:
-  - image_path: '/assets/images/5414b7a2dcb8b.jpg'
-    image_title: "Canalnight"
-    image_description: 
-  - image_path: '/assets/images/5414b7eacd6c6.jpg'
-    image_title: "Canalupsidedown"
+  - image_path: 
+    image_title: 
     image_description: 
 _options:
   image_path:

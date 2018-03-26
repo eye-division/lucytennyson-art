@@ -1,29 +1,20 @@
 ---
-title: "Manchester Canal"
+title: "Hand pressed linocuts 2014"
 description_markdown: 
 homepage_description_markdown: 
 _gallery_date:
 frontpage: false
-permalink: /gallery/photographs-in-sequences/manchester-canal/
+permalink: /printmaking/linocuts/
 display_title: true
 archive: false
 main_image_path: 
 images:
-  - image_path: '/assets/images/4b02eb2751e62.jpg'
-    image_title: "9 Oct 2006 14.25"
-    image_description: "" 
-  - image_path: '/assets/images/4b02ecfa90332.jpg'
-    image_title: "9 Oct 2006 14.32"
-    image_description: "" 
-  - image_path: '/assets/images/4b02eda27b698.jpg'
-    image_title: "9 Oct 2006 14.43.30"
-    image_description: "" 
-  - image_path: '/assets/images/4b02edee9707c.jpg'
-    image_title: "9 Oct 2006 14.46"
-    image_description: ""
-  - image_path: '/assets/images/4b02ee2717ecd.jpg'
-    image_title: "9 Oct 2006 14.51"
-    image_description: "" 
+  - image_path: '/assets/images/5414b7a2dcb8b.jpg'
+    image_title: "Canalnight"
+    image_description: 
+  - image_path: '/assets/images/5414b7eacd6c6.jpg'
+    image_title: "Canalupsidedown"
+    image_description: 
 _options:
   image_path:
     width: 1200

@@ -8,7 +8,10 @@ input {
         width: 50%;
     }
 }
+fieldset {
+  background-color: lighten($base-border-color, 70%);
 
+}
 /// Shopping cart
 
 form.cart {

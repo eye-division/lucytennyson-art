@@ -7,7 +7,7 @@ frontpage: false
 permalink: /watercolours/
 display_title: true
 archive: false
-main_image_path: 
+main_image_path: '/assets/images/5414bd0f10d4f.jpg'
 images:
   - image_path: '/assets/images/5414bd0f10d4f.jpg'
     image_title: "Oxford canal 2013 - 1"

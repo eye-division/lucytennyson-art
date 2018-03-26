@@ -7,7 +7,7 @@ frontpage: false
 permalink: /photographs/
 display_title: true
 archive: false
-main_image_path: 
+main_image_path: '/assets/images/4b02eb2751e62.jpg'
 images:
   - image_path: '/assets/images/4b02eb2751e62.jpg'
     image_title: "Manchester Canal - 9 Oct 2006 14.25"

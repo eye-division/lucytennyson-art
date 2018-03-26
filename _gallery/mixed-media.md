@@ -2,8 +2,9 @@
 title: "Mixed media"
 description_markdown: >-
   
-homepage_description_markdown: 
-frontpage: true
+homepage_description_markdown: >-
+  Homepage description for home page
+frontpage: false
 _gallery_date: 2016-05-01 00:00:00
 permalink: /mixed-media/
 archive: false

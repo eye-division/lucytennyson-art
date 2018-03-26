@@ -7,7 +7,7 @@ frontpage: false
 permalink: /printmaking/linocuts/
 display_title: true
 archive: false
-main_image_path: 
+main_image_path: '/assets/images/5414b7a2dcb8b.jpg'
 images:
   - image_path: '/assets/images/5414b7a2dcb8b.jpg'
     image_title: "Canalnight"

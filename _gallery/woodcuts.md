@@ -7,7 +7,7 @@ frontpage: false
 permalink: /printmaking/woodcuts/
 display_title: true
 archive: false
-main_image_path: 
+main_image_path: '/assets/images/4fa17404c1495.jpg'
 images:
   - image_path: '/assets/images/4fa17404c1495.jpg'
     image_title: "Table"

@@ -6,13 +6,14 @@ description_markdown: >-
   charm of existence in this spot, which was created for the bliss of souls like
   mine. I am so happy, my dear friend, so absorbed in the exquisite sense of
   mere tranquil existence, that I neglect my talents.
-homepage_description_markdown:
+homepage_description_markdown: >-
+  Description for home page - see our new show!
 _gallery_date:
-frontpage: false
+frontpage: true 
 permalink: /current-work/
 display_title: true
 archive: false
-main_image_path:
+main_image_path: '/assets/images/55d79367e8910.jpg'
 images:
   - image_path:
     image_title:

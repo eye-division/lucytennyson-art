@@ -1,19 +1,19 @@
 ---
-title: "Collagraphs - summer 2014"
+title: "Collagraphs"
 description_markdown: 
 homepage_description_markdown: 
 _gallery_date:
 frontpage: false
-permalink: /gallery/collagraphs/summer-2014/
+permalink: /printmaking/collagraphs/
 display_title: true
 archive: false
-main_image_path: 
+main_image_path: '/assets/images/5414b866e7d5d.jpg'
 images:
   - image_path: '/assets/images/5414b866e7d5d.jpg'
-    image_title: "Canalbridge1"
+    image_title: "Canalbridge1 - summer 2014"
     image_description: "" 
   - image_path: '/assets/images/5414b8958cb39.jpg'
-    image_title: "Canalbridge2"
+    image_title: "Canalbridge2 - summer 2014"
     image_description: "" 
  
 _options:

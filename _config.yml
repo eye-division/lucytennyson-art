@@ -54,13 +54,9 @@ defaults:
 # Payment settings
 # Environment settings
 appurl:
-    # development: "http://0.0.0.0:4000"
-    #
-    # staging URL
-    # staging: "http://black-hare.cloudvent.net/"
-    #
-    # production URL
-    # production: ""
+    development: "http://0.0.0.0:4000"
+    staging: "http://wealthy-dahlia.cloudvent.net"
+    production: "https://www.lucytennyson.co.uk"
 
 # Snipcart API key
 # snipcart_api_key:

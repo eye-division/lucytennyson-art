@@ -23,7 +23,7 @@ body {
       "header"
       "page"
       "footer";
-    grid-template-rows: minmax(180px, 10%) 1fr 20%;
+    grid-template-rows: minmax(80px, 10%) 1fr 20%;
     grid-gap: 10px;
     height: 100vh;
     margin: 0;
@@ -40,10 +40,7 @@ body {
 .site-footer {
     grid-area: footer;
 }
-.page-content {
-    @include flex(1 0 auto);
-    grid-area: page;
-}
+
 
 section {
     clear: both;
@@ -81,14 +78,18 @@ figure {
 
 .page-content {
 
+    grid-area: page;
+    padding: 1em;
+    padding: 1rem;
+
     .page {
-        @include outer-container;
-        padding: 1em;
+        //@include outer-container;
+        padding: 0 1em;
+        padding: 0 1rem;
+        max-width: 64rem;
+        margin: 0 auto;
         background-color: $white;
-        @include media ($medium) {
-            padding: 1em 0;
-        }
-    }
+     }
     ///	index.html
     .site-header-container {
         color: $white;

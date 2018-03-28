@@ -1,12 +1,16 @@
 ---
 title: Beyond Port Meadow - Four artists show together for Artweeks
 description_markdown: >-
-  A wonderful serenity has taken possession of my entire soul, like these sweet
-  mornings of spring which I enjoy with my whole heart. I am alone, and feel the
-  charm of existence in this spot, which was created for the bliss of souls like
-  mine. I am so happy, my dear friend, so absorbed in the exquisite sense of
-  mere tranquil existence, that I neglect my talents.
-homepage_description_markdown: Description for home page - see our new show!
+  Artist statements
+
+
+  #### Jane Haigh:&nbsp;"Beyond digital video and traditional painting and
+  drawing, lies the new work by JD Haigh, which is site specific to Port Meadow.
+  Her work uses editing and layers to suggest the workings of memory meaning and
+  time that, like spectres, are so perceptible in our historical places".&nbsp;
+homepage_description_markdown: >-
+  JD Haigh, Jenny Blythe, Elizabeth Lake and Lucy Tennyson show work Beyond Port
+  Meadow
 _gallery_date:
 frontpage: true
 permalink: /current-work/

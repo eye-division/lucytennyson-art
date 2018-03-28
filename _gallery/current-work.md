@@ -16,9 +16,16 @@ frontpage: true
 permalink: /current-work/
 display_title: true
 archive: false
-main_image_path: /assets/images/55d79367e8910.jpg
+main_image_path: /uploads/beyond-port-meadow-digital-image-2-cropped-jd-haigh-2018.jpg
 images:
   - image_path:
+    image_title: Cranes - JD Haigh
+    image_description:
+  - image_path: /uploads/cranes-port-meadow-projection-smaller.jpg
+    image_title: Beyond Port Meadow
+    image_description:
+  - image_path: >-
+      /uploads/beyond-port-meadow-digital-image-jd-haigh-2018-higher-res-3x2-5inch.jpg
     image_title:
     image_description:
 _options:
@@ -27,11 +34,13 @@ _options:
     height: 1200
     resize_style: contain
     mime_type: image/jpeg
+    correct_orientation: true
   main_image_path:
     width: 1200
     height: 800
     resize_style: contain
     mime_type: image/jpeg
+    correct_orientation: true
 _comments:
   title: Gallery title
   permalink: Be careful editing this

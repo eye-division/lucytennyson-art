@@ -15,6 +15,15 @@ images:
   - image_path: '/assets/images/5414b7eacd6c6.jpg'
     image_title: "Canalupsidedown"
     image_description: 
+  - image_path: '/assets/images/4fa16e4d94f77.jpg'
+    image_title: "Isis Lock, Oxford Canal"
+    image_description: "Linocut - 15 x 21cm"
+  - image_path: '/assets/images/4fa17275be8a3.jpg'
+    image_title: "219 Lift Bridge,  Oxford Canal"
+    image_description: "Linocut - 20 x 21 cm"
+  - image_path: '/assets/images/4fa19b87cfeab.jpg'
+    image_title: "Bridge 243, Isis Lock, Oxford Canal"
+    image_description: "Linocut - 15 x 21cm"   
 _options:
   image_path:
     width: 1200

@@ -8,6 +8,13 @@
   href: "/junctions/"
 - title: "Printmaking"
   href: "/printmaking/"
+  subcategories:
+    - subtitle: "Linocuts"
+      subhref: "/printmaking/linocuts/"
+    - subtitle: "Collographs"
+      subhref: "/printmaking/collographs/"
+    - subtitle: "Woodcuts"
+      subhref: "/printmaking/woodcuts/"
 - title: "Watercolours"
   href: "/watercolours/"
 - title: "Photographs"

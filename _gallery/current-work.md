@@ -1,19 +1,18 @@
 ---
-title: Current work
+title: Beyond Port Meadow - Four artists show together for Artweeks
 description_markdown: >-
   A wonderful serenity has taken possession of my entire soul, like these sweet
   mornings of spring which I enjoy with my whole heart. I am alone, and feel the
   charm of existence in this spot, which was created for the bliss of souls like
   mine. I am so happy, my dear friend, so absorbed in the exquisite sense of
   mere tranquil existence, that I neglect my talents.
-homepage_description_markdown: >-
-  Description for home page - see our new show!
+homepage_description_markdown: Description for home page - see our new show!
 _gallery_date:
-frontpage: true 
+frontpage: true
 permalink: /current-work/
 display_title: true
 archive: false
-main_image_path: '/assets/images/55d79367e8910.jpg'
+main_image_path: /assets/images/55d79367e8910.jpg
 images:
   - image_path:
     image_title:

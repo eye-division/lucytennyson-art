@@ -1,18 +1,15 @@
 ---
-title: Mythical landscape
+title: Mythical landscapes
 description_markdown: >-
-  A wonderful serenity has taken possession of my entire soul, like these sweet
-  mornings of spring which I enjoy with my whole heart. I am alone, and feel the
-  charm of existence in this spot, which was created for the bliss of souls like
-  mine. I am so happy, my dear friend, so absorbed in the exquisite sense of
-  mere tranquil existence, that I neglect my talents.
+  Mixed media work 2015-7 mostly in chalk pastel, gouache, crayon and pencil.
+  &nbsp;Some are worked into mono prints.
 homepage_description_markdown:
 _gallery_date:
 frontpage: false
 permalink: /mythical-landscape/
 display_title: true
 archive: false
-main_image_path:
+main_image_path: /uploads/stormatavebury.jpg
 images:
   - image_path:
     image_title:
@@ -28,6 +25,7 @@ _options:
     height: 800
     resize_style: contain
     mime_type: image/jpeg
+    correct_orientation: true
 _comments:
   title: Gallery title
   permalink: Be careful editing this

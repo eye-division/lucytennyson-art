@@ -16,7 +16,7 @@ images:
     image_title: Manchester Canal - 9 Oct 2006 14.32
     image_description:
   - image_path:
-    image_title: Manchester Canal - 9 Oct 2006 14.43.30
+    image_title:
     image_description:
   - image_path:
     image_title:

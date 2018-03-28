@@ -19,10 +19,10 @@ images:
     image_title: Manchester Canal - 9 Oct 2006 14.43.30
     image_description:
   - image_path:
-    image_title: Manchester Canal - 9 Oct 2006 14.46
+    image_title:
     image_description:
   - image_path:
-    image_title: Manchester Canal - 9 Oct 2006 14.51
+    image_title:
     image_description:
   - image_path: /assets/images/4b3929cbe9981.jpg
     image_title: Cape Cornwall - 1
@@ -72,8 +72,8 @@ images:
   - image_path: /assets/images/4fa78190b2d92.jpg
     image_title: Birmingham 7 -
     image_description:
-  - image_path: /assets/images/4b02edee9707c.jpg
-    image_title: Birmingham 7 -
+  - image_path:
+    image_title:
     image_description:
   - image_path: /assets/images/4fa781b712a27.jpg
     image_title: Birmingham 7 -

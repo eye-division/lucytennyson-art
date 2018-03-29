@@ -7,21 +7,21 @@ _gallery_date: 2016-05-01 00:00:00
 permalink: /mixed-media/
 archive: false
 display_title: true
-main_image_path: /assets/images/55d79367e8910.jpg
+main_image_path: /uploads/threefolkmusicains-smaller.jpg
 images:
-  - image_path: /assets/images/5728a4289a3c6.jpg
+  - image_path:
     image_title: Stones2
     image_description:
-  - image_path: /assets/images/55d7933329c46.jpg
+  - image_path:
     image_title: Clumps
     image_description:
-  - image_path: /assets/images/5728a164d6924.jpg
+  - image_path:
     image_title: Clumps2
     image_description:
-  - image_path: /assets/images/5728a1cca5a90.jpg
+  - image_path:
     image_title: Wall
     image_description:
-  - image_path: /assets/images/5728a281d846c.jpg
+  - image_path:
     image_title: Port Meadow evening
     image_description:
   - image_path:
@@ -56,6 +56,7 @@ _options:
     height: 800
     resize_style: contain
     mime_type: image/jpeg
+    correct_orientation: true
 _comments:
   title: Gallery title
   permalink: Be careful editing this

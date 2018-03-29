@@ -9,17 +9,17 @@ archive: false
 display_title: true
 main_image_path: /uploads/threefolkmusicains-smaller.jpg
 images:
-  - image_path:
-    image_title: Stones2
+  - image_path: /uploads/swanagejazzstorm.jpg
+    image_title: Swanage jazz
     image_description:
-  - image_path:
-    image_title: Clumps
+  - image_path: /uploads/swanagejazz-smaller-1.jpg
+    image_title: Swanage jazz 2
     image_description:
-  - image_path:
-    image_title: Clumps2
+  - image_path: /uploads/particle4-smaller.jpg
+    image_title: The Theory of Everything 1
     image_description:
-  - image_path:
-    image_title: Wall
+  - image_path: /uploads/particle5-smaller.jpg
+    image_title: Theory of Everything 2
     image_description:
   - image_path:
     image_title: Port Meadow evening
@@ -51,6 +51,7 @@ _options:
     height: 1200
     resize_style: contain
     mime_type: image/jpeg
+    correct_orientation: true
   main_image_path:
     width: 1200
     height: 800

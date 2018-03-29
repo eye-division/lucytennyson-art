@@ -11,15 +11,19 @@ display_title: true
 archive: false
 main_image_path: /uploads/stormatavebury.jpg
 images:
-  - image_path:
-    image_title:
-    image_description:
+  - image_path: /uploads/stones1small.jpg
+    image_title: Stones
+    image_description: Collage on board
+  - image_path: /uploads/clumpssmall.jpg
+    image_title: Clumps
+    image_description: Mixed media on board
 _options:
   image_path:
     width: 1200
     height: 1200
     resize_style: contain
     mime_type: image/jpeg
+    correct_orientation: true
   main_image_path:
     width: 1200
     height: 800

@@ -1,5 +1,5 @@
 ---
-title: New work
+title: The ice cream van
 description_markdown: New work largely along the theme of roads and junctions
 homepage_description_markdown:
 _gallery_date:

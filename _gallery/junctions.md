@@ -18,6 +18,9 @@ images:
   - image_path: /uploads/yorkpen.jpg
     image_title: York peninsula
     image_description: Pastel and gouache on paper
+  - image_path: /uploads/kerala-dawn-smaller.jpg
+    image_title: Kerala Dawn
+    image_description: Pastel
 _options:
   image_path:
     width: 1200

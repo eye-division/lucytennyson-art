@@ -17,6 +17,9 @@ images:
   - image_path: /uploads/clumpssmall.jpg
     image_title: Clumps
     image_description: Mixed media on board
+  - image_path: /uploads/whiteh4.jpg
+    image_title:
+    image_description:
 _options:
   image_path:
     width: 1200

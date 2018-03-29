@@ -1,5 +1,5 @@
 ---
-title: Junctions
+title: New work
 description_markdown: >-
   A wonderful serenity has taken possession of my entire soul, like these sweet
   mornings of spring which I enjoy with my whole heart. I am alone, and feel the

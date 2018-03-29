@@ -18,8 +18,20 @@ images:
     image_title: Clumps
     image_description: Mixed media on board
   - image_path: /uploads/whiteh4.jpg
-    image_title:
+    image_title: White Horses
     image_description:
+  - image_path: /uploads/phantom1-smaller.jpg
+    image_title: Phantom 1
+    image_description: Pastel over monoprint
+  - image_path: /uploads/phantom2-smaller.jpg
+    image_title: Phantom 2
+    image_description: Pastel over monoprnt
+  - image_path: /uploads/untitled1-smaller.jpg
+    image_title: Untitled horse 1
+    image_description: Monoprint
+  - image_path: /uploads/untitled2-smaller.jpg
+    image_title: Untitled horse 2
+    image_description: Monoprnt
 _options:
   image_path:
     width: 1200

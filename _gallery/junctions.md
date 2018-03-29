@@ -15,6 +15,9 @@ images:
   - image_path: /uploads/cutteslowe-roundabout-crp1.jpg
     image_title: Cutteslowe roundabout
     image_description: 'Mixed media - pastel, gouache, crayon'
+  - image_path: /uploads/yorkpen.jpg
+    image_title: York peninsula
+    image_description: Pastel and gouache on paper
 _options:
   image_path:
     width: 1200

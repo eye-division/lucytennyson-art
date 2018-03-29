@@ -1,33 +1,33 @@
 ---
 title: New work
-description_markdown: >-
-  A wonderful serenity has taken possession of my entire soul, like these sweet
-  mornings of spring which I enjoy with my whole heart. I am alone, and feel the
-  charm of existence in this spot, which was created for the bliss of souls like
-  mine. I am so happy, my dear friend, so absorbed in the exquisite sense of
-  mere tranquil existence, that I neglect my talents.
+description_markdown: New work largely along the theme of roads and junctions
 homepage_description_markdown:
 _gallery_date:
 frontpage: false
 permalink: /junctions/
 display_title: true
 archive: false
-main_image_path:
+main_image_path: /uploads/icecream-van-smaller.jpg
 images:
-  - image_path:
-    image_title:
-    image_description:
+  - image_path: /uploads/lonsdalerd-smaller.jpg
+    image_title: Lonsdale Road
+    image_description: Mixed media - pastel and gouache
+  - image_path: /uploads/cutteslowe-roundabout-crp1.jpg
+    image_title: Cutteslowe roundabout
+    image_description: 'Mixed media - pastel, gouache, crayon'
 _options:
   image_path:
     width: 1200
     height: 1200
     resize_style: contain
     mime_type: image/jpeg
+    correct_orientation: true
   main_image_path:
     width: 1200
     height: 800
     resize_style: contain
     mime_type: image/jpeg
+    correct_orientation: true
 _comments:
   title: Gallery title
   permalink: Be careful editing this

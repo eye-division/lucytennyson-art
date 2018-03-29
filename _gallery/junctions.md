@@ -1,5 +1,5 @@
 ---
-title: The ice cream van
+title: New work pastel and gouache
 description_markdown: New work largely along the theme of roads and junctions
 homepage_description_markdown:
 _gallery_date:

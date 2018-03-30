@@ -1,8 +1,23 @@
-- title: "Posts"
-  href: "/posts/"
-  
-- title: "Projects"
-  href: "/projects/"
-  
-- title: "About"
-  href: "/about/"
+- title: Home
+  href: /
+- title: Beyond Port Meadow
+  href: /beyond-port-meadow/
+- title: Mythical landscape
+  href: /mythical-landscape/
+- title: New work
+  href: /junctions/
+- title: Printmaking
+  href: /printmaking/
+  subcategories:
+    - subtitle: Linocuts
+      subhref: /printmaking/linocuts/
+    - subtitle: Collagraphs
+      subhref: /printmaking/collagraphs/
+    - subtitle: Woodcuts
+      subhref: /printmaking/woodcuts/
+- title: Watercolours
+  href: /watercolours/
+- title: Photographs
+  href: /photographs/
+- title: Contact
+  href: /contact/

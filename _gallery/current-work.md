@@ -1,5 +1,5 @@
 ---
-title: INTRODUCTION
+title: A mixed bag of mixed media
 description_markdown:
 homepage_description_markdown:
 _gallery_date:
@@ -15,20 +15,14 @@ images:
   - image_path: /uploads/threefolkmusicains-smaller.jpg
     image_title: Three Musicians
     image_description:
-  - image_path: /uploads/jenny-blyth-summer-storm-©-2017-sm.jpg
-    image_title: >-
-      Jenny Blyth: Summer Storm 2017 photograph, pigmented inks on archival
-      paper Ed of 25.
+  - image_path: /uploads/swanagejazzstorm.jpg
+    image_title: Summer jazz storm
     image_description:
-  - image_path: /uploads/jenny-blyth-©-morning-mist-2017.jpg
-    image_title: >-
-      Jenny Blyth Morning Mist 2017 photograph, pigmented inks on archival paper
-      Ed of 25
+  - image_path: /uploads/yorkpen.jpg
+    image_title: Yorke Peninsula
     image_description:
-  - image_path: /uploads/ra-cherwell-fog-©-jenny-blyth-2017.jpg
-    image_title: >-
-      Jenny Blyth  Fog 2017 photograph, pigmented inks on archival paper Ed of
-      25.
+  - image_path: /uploads/stormatavebury.jpg
+    image_title: Stones
     image_description:
 _options:
   image_path:

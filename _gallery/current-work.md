@@ -1,5 +1,5 @@
 ---
-title: Beyond Port Meadow - Four artists show together for Artweeks
+title: INTRODUCTION
 description_markdown: >-
   Artist statements
 
@@ -7,18 +7,18 @@ description_markdown: >-
   #### Jane Haigh: "Beyond digital video and traditional painting and drawing,
   lies the new work by JD Haigh, which is site specific to Port Meadow. Her work
   uses editing and layers to suggest the workings of memory meaning and time
-  that, like spectres, are so perceptible in our historical places".&nbsp;
+  that, like spectres, are so perceptible in our historical places".
 
 
-  Jenny Blyth:&nbsp; "I never tire of Port Meadow and have walked daily whatever
-  the weather for years.&nbsp; I love the huge skies, and stepping onto the
-  meadow that stretches towards Oxford, it presents like an old Dutch master, an
-  ever-changing canvas.&nbsp; It is large enough to lose yourself in nature, to
+  Jenny Blyth: "I never tire of Port Meadow and have walked daily whatever the
+  weather for years. I love the huge skies, and stepping onto the meadow that
+  stretches towards Oxford, it presents like an old Dutch master, an
+  ever-changing canvas. It is large enough to lose yourself in nature, to
   embrace the elements, and familiar enough to encourage a quiet meditation. I
-  attempt to capture a sense of oneness in my photographs.&nbsp; I have always
-  been drawn to the poetry in photography, and try to catch the moment as it
-  feels on the day.&nbsp; I am not technicially minded, and shy away from
-  photoshop so that the images are as true as they can be."
+  attempt to capture a sense of oneness in my photographs. I have always been
+  drawn to the poetry in photography, and try to catch the moment as it feels on
+  the day. I am not technicially minded, and shy away from photoshop so that the
+  images are as true as they can be."
 homepage_description_markdown: >-
   JD Haigh, Jenny Blythe, Elizabeth Lake and Lucy Tennyson show work Beyond Port
   Meadow

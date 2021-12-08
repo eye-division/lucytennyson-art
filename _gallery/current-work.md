@@ -24,6 +24,9 @@ images:
   - image_path: /uploads/stormatavebury.jpg
     image_title: Stones
     image_description:
+  - image_path: /uploads/cutteslowe-roundabout-crp1-1.jpg
+    image_title: Cutteslowe Roundabout
+    image_description:
 _options:
   image_path:
     width: 1200

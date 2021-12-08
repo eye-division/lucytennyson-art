@@ -1,40 +1,19 @@
 ---
 title: INTRODUCTION
-description_markdown: >-
-  Artist statements
-
-
-  #### Jane Haigh: "Beyond digital video and traditional painting and drawing,
-  lies the new work by JD Haigh, which is site specific to Port Meadow. Her work
-  uses editing and layers to suggest the workings of memory meaning and time
-  that, like spectres, are so perceptible in our historical places".
-
-
-  Jenny Blyth: "I never tire of Port Meadow and have walked daily whatever the
-  weather for years. I love the huge skies, and stepping onto the meadow that
-  stretches towards Oxford, it presents like an old Dutch master, an
-  ever-changing canvas. It is large enough to lose yourself in nature, to
-  embrace the elements, and familiar enough to encourage a quiet meditation. I
-  attempt to capture a sense of oneness in my photographs. I have always been
-  drawn to the poetry in photography, and try to catch the moment as it feels on
-  the day. I am not technicially minded, and shy away from photoshop so that the
-  images are as true as they can be."
-homepage_description_markdown: >-
-  JD Haigh, Jenny Blythe, Elizabeth Lake and Lucy Tennyson show work Beyond Port
-  Meadow
+description_markdown:
+homepage_description_markdown:
 _gallery_date:
 frontpage: true
 permalink: /beyond-port-meadow/
 display_title: true
 archive: false
-main_image_path: /uploads/beyond-port-meadow-digital-image-2-cropped-jd-haigh-2018.jpg
+main_image_path: /uploads/icecream-van-smaller-1.jpg
 images:
-  - image_path: /uploads/cranes-port-meadow-projection-smaller.jpg
-    image_title: 'JD Haigh: Beyond Port Meadow'
+  - image_path: /uploads/lonsdalerd-smaller.jpg
+    image_title:
     image_description:
-  - image_path: >-
-      /uploads/beyond-port-meadow-digital-image-jd-haigh-2018-higher-res-3x2-5inch.jpg
-    image_title: 'JD Haigh: Beyond Port Meadow 2'
+  - image_path: /uploads/threefolkmusicains-smaller.jpg
+    image_title: Three Musicians
     image_description:
   - image_path: /uploads/jenny-blyth-summer-storm-©-2017-sm.jpg
     image_title: >-

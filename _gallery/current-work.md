@@ -3,7 +3,7 @@ title: Three printmakers
 description_markdown:
 homepage_description_markdown:
 _gallery_date:
-frontpage: true
+frontpage: false
 permalink: /beyond-port-meadow/
 display_title: false
 archive: false

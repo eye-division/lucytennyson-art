@@ -1,5 +1,5 @@
 ---
-title:
+title: Three printmakers
 description_markdown:
 homepage_description_markdown:
 _gallery_date:

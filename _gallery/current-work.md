@@ -1,14 +1,17 @@
 ---
-title:
+title: Three printmakers
 description_markdown:
 homepage_description_markdown:
 _gallery_date:
-frontpage: true
+frontpage: false
 permalink: /beyond-port-meadow/
-display_title: true
+display_title: false
 archive: false
-main_image_path: /uploads/icecream-van-smaller-1.jpg
+main_image_path: /uploads/canalbridge.jpg
 images:
+  - image_path: /uploads/bridge1.JPG
+    image_title:
+    image_description:
   - image_path: /uploads/lonsdalerd-smaller.jpg
     image_title:
     image_description:
@@ -50,4 +53,3 @@ _comments:
   frontpage: Show this gallery on the homepage
   homepage_description_markdown: Text used on homepage if shown
 ---
-

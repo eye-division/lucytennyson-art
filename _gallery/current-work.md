@@ -1,5 +1,5 @@
 ---
-title: A mixed bag of mixed media
+title: Three printmakers
 description_markdown:
 homepage_description_markdown:
 _gallery_date:
@@ -50,4 +50,3 @@ _comments:
   frontpage: Show this gallery on the homepage
   homepage_description_markdown: Text used on homepage if shown
 ---
-

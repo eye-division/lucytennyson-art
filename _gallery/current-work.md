@@ -7,8 +7,11 @@ frontpage: false
 permalink: /beyond-port-meadow/
 display_title: false
 archive: false
-main_image_path: /uploads/icecream-van-smaller-1.jpg
+main_image_path: /uploads/canalbridge.jpg
 images:
+  - image_path: /uploads/bridge1.JPG
+    image_title:
+    image_description:
   - image_path: /uploads/lonsdalerd-smaller.jpg
     image_title:
     image_description:
@@ -26,9 +29,6 @@ images:
     image_description:
   - image_path: /uploads/cutteslowe-roundabout-crp1-1.jpg
     image_title: Cutteslowe Roundabout
-    image_description:
-  - image_path: /uploads/bridge1.JPG
-    image_title:
     image_description:
 _options:
   image_path:

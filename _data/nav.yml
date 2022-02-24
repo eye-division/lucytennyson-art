@@ -2,10 +2,6 @@
   href: /
 - title: Artweeks 2022
   href: /beyond-port-meadow/
-- title: Painting and mixed media
-  href: /mythical-landscape/
-- title: New work
-  href: /junctions/
 - title: Printmaking
   href: /printmaking/
   subcategories:
@@ -15,6 +11,10 @@
       subhref: /printmaking/collagraphs/
     - subtitle: Woodcuts
       subhref: /printmaking/woodcuts/
+- title: New work
+  href: /junctions/
+- title: Painting and mixed media
+  href: /mythical-landscape/
 - title: Photographs
   href: /photographs/
 - title: Drawings

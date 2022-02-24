@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Galleries"
+title: Galleries
 permalink: /gallery/
 main_image_path:
 main_image_caption:
@@ -12,8 +12,8 @@ _options:
   main_image_path:
     width: 1200
     height: 1200
-    resize_style: "contain"
-    mime_type: "image/jpeg"
+    resize_style: contain
+    mime_type: image/jpeg
 _comments:
   title: Gallery title
   permalink: Be careful editing this
@@ -22,6 +22,7 @@ _comments:
   frontpage: Show this gallery on the homepage
   homepage_description_markdown: Text used on homepage if shown
 ---
+
 <section class="gallery">
 
 {% for gallery in site.gallery%}
@@ -37,4 +38,3 @@ _comments:
 
 {% endfor %}
 </section>
-

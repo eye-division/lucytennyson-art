@@ -1,6 +1,6 @@
 ---
 layout: home
-showcarousel: false
+showcarousel: true
 carousel:
   - image: /assets/images/5414b7a2dcb8b.jpg
     caption: Lino and woodcuts
@@ -66,11 +66,11 @@ _comments:
                   <h2 class="title">{{ section.frontpagetitle }}</h2>
                 </header>
                 {% if section.homepage_description_markdown %}
-                  {{ section.homepage_description_markdown | markdownify }}<br>
+                  {{ section.homepage_description_markdown | markdownify }}<br />
                   <span class="readmore">Read more <span>{{nextPost.title}} <svg class="icon"><use xlink:href="#icon-double_angle_right" /></svg></span>
 
                 {% endif %}
-            </article>
+            </span></article>
           </div>
           </a>
         </section>
@@ -99,3 +99,4 @@ _comments:
       </section>
       {% endif %}
     {% endfor %}
+</section>

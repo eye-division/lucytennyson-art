@@ -1,7 +1,7 @@
 ---
-title: Three printmakers
-description_markdown:
-homepage_description_markdown:
+title: 'Three printmakers  '
+description_markdown: xxxxx
+homepage_description_markdown: xxxxxxx
 _gallery_date:
 frontpage: false
 permalink: /beyond-port-meadow/
@@ -53,3 +53,4 @@ _comments:
   frontpage: Show this gallery on the homepage
   homepage_description_markdown: Text used on homepage if shown
 ---
+

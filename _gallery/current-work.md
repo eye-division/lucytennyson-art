@@ -12,24 +12,6 @@ images:
   - image_path: /uploads/bridge1.JPG
     image_title:
     image_description:
-  - image_path: /uploads/lonsdalerd-smaller.jpg
-    image_title:
-    image_description:
-  - image_path: /uploads/threefolkmusicains-smaller.jpg
-    image_title: Three Musicians
-    image_description:
-  - image_path: /uploads/swanagejazzstorm.jpg
-    image_title: Summer jazz storm
-    image_description:
-  - image_path: /uploads/yorkpen.jpg
-    image_title: Yorke Peninsula
-    image_description:
-  - image_path: /uploads/stormatavebury.jpg
-    image_title: Stones
-    image_description:
-  - image_path: /uploads/cutteslowe-roundabout-crp1-1.jpg
-    image_title: Cutteslowe Roundabout
-    image_description:
 _options:
   image_path:
     width: 1200

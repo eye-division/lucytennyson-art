@@ -36,7 +36,12 @@ imagecdn:
   staging: "https://ed-lucytennysonart-dev.imgix.net"
   production: "https://ed-lucytennysonart.imgix.net"
 
-
+# Collections Example
+collections:
+    gallery:
+        output: true
+        permalink: /gallery/:path/
+        _hide_content: true
 
 # Defaults Example
 defaults:

@@ -6,29 +6,16 @@
     //hljs.initHighlightingOnLoad();
 
     // Header
-    var menuToggle = $('#js-mobile-menu').unbind();
-    $('#js-navigation-menu').removeClass("show");
+    var menuToggle = $('#js--mobile-menu').unbind();
+    $('#js--navigation-menu').removeClass("show");
     menuToggle.on('click', function(e) {
       e.preventDefault();
-      $('#js-navigation-menu').slideToggle(function(){
-        if($('#js-navigation-menu').is(':hidden')) {
-          $('#js-navigation-menu').removeAttr('style');
+      $('#js--navigation-menu').slideToggle(function(){
+        if($('#js--navigation-menu').is(':hidden')) {
+          $('#js--navigation-menu').removeAttr('style');
         }
       });
     });
-
-    // Drop down v2 - Bourbon
-    $(".dropdown-button").click(function() {
-      var $button, $menu;
-      $button = $(this);
-      $menu = $button.siblings(".dropdown-menu");
-      $menu.toggleClass("show-menu");
-      $menu.children("li").click(function() {
-        $menu.removeClass("show-menu");
-        $button.html($(this).html());
-      });
-    });
-
 
     // Lightbox2 options
     lightbox.option({
@@ -42,9 +29,13 @@
     $('.flexslider').flexslider({
       animation: "fade",
       controlNav: false,
-      directionNav: true,
+      directionNav: false,
       slideshowSpeed: 5000,
-      animationSpeed: 600,
+      smoothHeight: false,
+      animationLoop: true,
+      animationSpeed: 2000,
+      pauseOnAction: true,
+      useCSS: true,
       touch: true
     });
 

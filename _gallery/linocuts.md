@@ -1,13 +1,15 @@
 ---
 title: "Linocuts"
-description_markdown: 
-homepage_description_markdown: 
-_gallery_date:
-frontpage: false
-permalink: /printmaking/linocuts/
 display_title: true
-archive: false
+permalink: /printmaking/linocuts/
+gallery_date:
+frontpage: false
+homepage_description_markdown: 
+display_image: true
 main_image_path: '/assets/images/5414b7a2dcb8b.jpg'
+main_image_caption:
+thumb_crop: true
+display_thumb_title: true
 images:
   - image_path: '/assets/images/5414b7a2dcb8b.jpg'
     image_title: "Canalnight"
@@ -23,7 +25,8 @@ images:
     image_description: "Linocut - 20 x 21 cm"
   - image_path: '/assets/images/4fa19b87cfeab.jpg'
     image_title: "Bridge 243, Isis Lock, Oxford Canal"
-    image_description: "Linocut - 15 x 21cm"   
+    image_description: "Linocut - 15 x 21cm"  
+archive: false
 _options:
   image_path:
     width: 1200

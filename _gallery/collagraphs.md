@@ -1,13 +1,15 @@
 ---
 title: Collagraphs
-description_markdown:
-homepage_description_markdown:
-_gallery_date:
-frontpage: false
-permalink: /printmaking/collagraphs/
 display_title: true
-archive: false
+permalink: /printmaking/collagraphs/
+gallery_date:
+frontpage: false
+homepage_description_markdown:
+display_image: true
 main_image_path: /assets/images/5414b866e7d5d.jpg
+main_image_caption:
+thumb_crop: true
+display_thumb_title: true
 images:
   - image_path: /assets/images/5414b866e7d5d.jpg
     image_title: Canalbridge1 - summer 2014
@@ -18,6 +20,7 @@ images:
   - image_path: /uploads/bridge1-1.JPG
     image_title: Folly Bridge
     image_description:
+archive: false
 _options:
   image_path:
     width: 1200
@@ -39,4 +42,3 @@ _comments:
   frontpage: Show this gallery on the homepage
   homepage_description_markdown: Text used on homepage if shown
 ---
-

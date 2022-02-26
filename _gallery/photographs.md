@@ -1,13 +1,15 @@
 ---
 title: Photographs
-description_markdown:
-homepage_description_markdown:
-_gallery_date:
-frontpage: false
-permalink: /photographs/
 display_title: true
-archive: false
+permalink: /photographs/
+gallery_date:
+frontpage: false
+homepage_description_markdown:
+display_image: true
 main_image_path: /assets/images/4b02eb2751e62.jpg
+main_image_caption:
+thumb_crop: true
+display_thumb_title: true
 images:
   - image_path: /assets/images/4b02eb2751e62.jpg
     image_title: Manchester Canal - 9 Oct 2006 14.25
@@ -81,6 +83,7 @@ images:
   - image_path: /assets/images/4fa781c81c0bb.jpg
     image_title: Birmingham 7 -
     image_description:
+archive: false
 _options:
   image_path:
     width: 1200

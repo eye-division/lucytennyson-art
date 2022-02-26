@@ -1,13 +1,15 @@
 ---
 title: New work pastel and gouache
-description_markdown: New work largely along the theme of roads and junctions
-homepage_description_markdown:
-_gallery_date:
-frontpage: false
-permalink: /junctions/
 display_title: true
-archive: false
+permalink: /junctions/
+gallery_date:
+frontpage: false
+homepage_description_markdown:
+display_image: true
 main_image_path: /uploads/icecream-van-smaller.jpg
+main_image_caption:
+thumb_crop: true
+display_thumb_title: true
 images:
   - image_path: /uploads/lonsdalerd-smaller.jpg
     image_title: Lonsdale Road
@@ -21,19 +23,18 @@ images:
   - image_path: /uploads/kerala-dawn-smaller.jpg
     image_title: Kerala Dawn
     image_description: Pastel
+archive: false
 _options:
   image_path:
     width: 1200
     height: 1200
     resize_style: contain
     mime_type: image/jpeg
-    correct_orientation: true
   main_image_path:
     width: 1200
     height: 800
     resize_style: contain
     mime_type: image/jpeg
-    correct_orientation: true
 _comments:
   title: Gallery title
   permalink: Be careful editing this
@@ -45,3 +46,4 @@ _comments:
   homepage_description_markdown: Text used on homepage if shown
 ---
 
+New work largely along the theme of roads and junctions

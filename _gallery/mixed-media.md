@@ -1,13 +1,15 @@
 ---
 title: Mixed media
-description_markdown:
-homepage_description_markdown: Homepage description for home page
-frontpage: false
-_gallery_date: 2016-05-01 00:00:00
-permalink: /mixed-media/
-archive: false
 display_title: true
+permalink: /mixed-media/
+gallery_date: 2016-05-01 00:00:00
+frontpage: false
+homepage_description_markdown: Homepage description for home page
+display_image: true
 main_image_path: /uploads/threefolkmusicains-smaller.jpg
+main_image_caption:
+thumb_crop: true
+display_thumb_title: true
 images:
   - image_path: /uploads/swanagejazzstorm.jpg
     image_title: Swanage jazz
@@ -45,19 +47,18 @@ images:
   - image_path:
     image_title: Yorke Peninsula
     image_description:
+archive: false
 _options:
   image_path:
     width: 1200
     height: 1200
     resize_style: contain
     mime_type: image/jpeg
-    correct_orientation: true
   main_image_path:
     width: 1200
     height: 800
     resize_style: contain
     mime_type: image/jpeg
-    correct_orientation: true
 _comments:
   title: Gallery title
   permalink: Be careful editing this

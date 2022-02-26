@@ -1,5 +1,7 @@
 /// CUSTOM THEME
-
+.slideshow {
+  margin-bottom: 2em;
+}
 .flexslider {
   margin: 0;
   background: transparent;
@@ -191,7 +193,7 @@
 }
 /// RESPONSIVE
 
-@include media ($medium) {
+@include grid-media ($small) {
   .flex-direction-nav .flex-prev {
     opacity: 1;
     left: 10px;

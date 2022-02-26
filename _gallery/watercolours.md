@@ -1,13 +1,15 @@
 ---
 title: New gallery
-description_markdown:
-homepage_description_markdown:
-_gallery_date:
-frontpage: false
-permalink: /watercolours/
 display_title: true
-archive: false
+permalink: /watercolours/
+gallery_date:
+frontpage: false
+homepage_description_markdown:
+display_image: true
 main_image_path:
+main_image_caption:
+thumb_crop: true
+display_thumb_title: true
 images:
   - image_path:
     image_title:
@@ -24,6 +26,7 @@ images:
   - image_path:
     image_title: Oxford canal 2013 - 5
     image_description:
+archive: false
 _options:
   image_path:
     width: 1200
@@ -45,5 +48,3 @@ _comments:
   frontpage: Show this gallery on the homepage
   homepage_description_markdown: Text used on homepage if shown
 ---
-
-

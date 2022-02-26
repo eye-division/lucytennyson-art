@@ -1,15 +1,15 @@
 ---
 title: Mythical landscapes
-description_markdown: >-
-  Mixed media work 2015-7 mostly in chalk pastel, gouache, crayon and pencil.
-  &nbsp;Some are worked into mono prints.
-homepage_description_markdown:
-_gallery_date:
-frontpage: false
-permalink: /mythical-landscape/
 display_title: true
-archive: false
+permalink: /mythical-landscape/
+gallery_date:
+frontpage: false
+homepage_description_markdown:
+display_image: true
 main_image_path: /uploads/stormatavebury.jpg
+main_image_caption:
+thumb_crop: true
+display_thumb_title: true
 images:
   - image_path: /uploads/stones1small.jpg
     image_title: Stones
@@ -32,19 +32,18 @@ images:
   - image_path: /uploads/untitled2-smaller.jpg
     image_title: Untitled horse 2
     image_description: Monoprnt
+archive: false
 _options:
   image_path:
     width: 1200
     height: 1200
     resize_style: contain
     mime_type: image/jpeg
-    correct_orientation: true
   main_image_path:
     width: 1200
     height: 800
     resize_style: contain
     mime_type: image/jpeg
-    correct_orientation: true
 _comments:
   title: Gallery title
   permalink: Be careful editing this
@@ -56,3 +55,5 @@ _comments:
   homepage_description_markdown: Text used on homepage if shown
 ---
 
+Mixed media work 2015-7 mostly in chalk pastel, gouache, crayon and pencil.
+  &nbsp;Some are worked into mono prints.

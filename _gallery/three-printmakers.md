@@ -1,30 +1,31 @@
 ---
-title: 'Three printmakers  '
-description_markdown: xxxxx
-homepage_description_markdown: xxxxxxx
-_gallery_date:
+title: 'Three printmakers'
+display_title: true
+permalink: /three-printmakers/
+gallery_date:
 frontpage: false
-permalink: /beyond-port-meadow/
-display_title: false
-archive: false
+homepage_description_markdown: xxxxxxx
+display_image: true
 main_image_path: /uploads/canalbridge.jpg
+main_image_caption:
+thumb_crop: true
+display_thumb_title: true
 images:
   - image_path: /uploads/bridge1.JPG
     image_title:
     image_description:
+archive: false
 _options:
   image_path:
     width: 1200
     height: 1200
     resize_style: contain
     mime_type: image/jpeg
-    correct_orientation: true
   main_image_path:
     width: 1200
     height: 800
     resize_style: contain
     mime_type: image/jpeg
-    correct_orientation: true
 _comments:
   title: Gallery title
   permalink: Be careful editing this
@@ -35,4 +36,3 @@ _comments:
   frontpage: Show this gallery on the homepage
   homepage_description_markdown: Text used on homepage if shown
 ---
-

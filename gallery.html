@@ -4,37 +4,59 @@ title: Galleries
 permalink: /gallery/
 main_image_path:
 main_image_caption:
+display_image: false
 frontpage: false
 description_markdown:
-frontpagetitle: Title for front
+homepage_description_markdown: Gallery
+frontpagetitle: Gallery
 archive:
 _options:
-  main_image_path:
+  layout:
+    hidden: true
+  permalink:
+    hidden: true
+  image_path:
+    uploads_dir: assets/images/:year
     width: 1200
     height: 1200
     resize_style: contain
     mime_type: image/jpeg
+  main_image_path:
+    uploads_dir: assets/images/:year
+    width: 1200
+    height: 1200
+    resize_style: contain
+    mime_type: image/jpeg
+  content:
+    uploads_dir: assets/:year
 _comments:
   title: Gallery title
-  permalink: Be careful editing this
   main_image_path: Image used to represent your gallery
-  archive: Not used yet!
-  frontpage: Show this gallery on the homepage
+  display_image: Show featured image at the top of the page
+  frontpage: Show this gallery on the homepag
+  frontpagetitle: Title for homepage display
   homepage_description_markdown: Text used on homepage if shown
 ---
 
-<section class="gallery">
+<div class="editable">
+  <p class="strapline"></p>
+</div>
 
-{% for gallery in site.gallery%}
+<section class="gallery--list">
 
-     <div class="gallery-box {% cycle 'alpha', '', ' last' %}">
+<!-- order galleries by date -->
+{% assign galleries = site.gallery | sort: 'gallery_date' | reverse %}
 
-          <a href="{{ gallery.permalink }}" title="{{ gallery.title }}" class="galleryphoto">
-	          {% include img.html src=gallery.main_image_path  width=300 height=300 fit=crop alt=gallery.title %}
-	          <h4>{{ gallery.title }}</h4>
-          </a>
+{% for gallery in galleries %}
 
-     </div>
+   <div class="gallery--box">
+
+        <a href="{{ gallery.permalink }}" title="{{ gallery.title }}" class="gallery--link">
+          {% include img.html src=gallery.main_image_path width=200 height=200 fit=crop alt=gallery.title %}
+          <h4 class="cover--title mb0">{{ gallery.title }}</h4>
+        </a>
+
+   </div>
 
 {% endfor %}
 </section>

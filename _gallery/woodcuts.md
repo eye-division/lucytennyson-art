@@ -1,17 +1,20 @@
 ---
 title: "Woodcuts"
-description_markdown: 
-homepage_description_markdown: 
-_gallery_date:
-frontpage: false
-permalink: /printmaking/woodcuts/
 display_title: true
-archive: false
+permalink: /printmaking/woodcuts/
+gallery_date:
+frontpage: false
+homepage_description_markdown: 
+display_image: true
 main_image_path: '/assets/images/4fa17404c1495.jpg'
+main_image_caption:
+thumb_crop: true
+display_thumb_title: true
 images:
   - image_path: '/assets/images/4fa17404c1495.jpg'
     image_title: "Table"
     image_description: "Woodcut - 12 x17cm" 
+archive: false
 _options:
   image_path:
     width: 1200

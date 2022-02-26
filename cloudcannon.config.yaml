@@ -1,0 +1,15 @@
+# Global CloudCannon configuration
+
+# Populates collections for navigation and metadata in the editor
+collections_config:
+  gallery:
+    output: true
+    path: ""
+    url: /gallery/:path/
+    _hide_content: true
+    singular_name: Gallery
+    singular_key: gallery
+    disable_add: false
+    add_options:
+      - name: Add Gallery
+        icon: portrait

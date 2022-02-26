@@ -1,10 +1,12 @@
 ---
-title: 'Three printmakers at Artweeks 2022'
+title: Three printmakers at Artweeks 2022
 display_title: true
 permalink: /three-printmakers/
 gallery_date:
 frontpage: true
-homepage_description_markdown: 'Three printmakers at Artweeks 2022'
+homepage_description_markdown: >-
+  Three printmakers: Lucy Tennyson,&nbsp; Nic Hamilton and Biddy Hudson
+  exhibiting at the easyHotel in Summertown
 display_image: true
 main_image_path: /uploads/canalbridge.jpg
 main_image_caption:
@@ -45,3 +47,4 @@ _comments:
   frontpagetitle: Title for homepage display
   homepage_description_markdown: Text used on homepage if shown
 ---
+

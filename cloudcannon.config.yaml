@@ -4,11 +4,7 @@
 collections_config:
   gallery:
     output: true
-    sort:
-      key: gallery_date
-    path: ""
     url: /gallery/[slug]/
-    _hide_content: true
     singular_name: Gallery
     singular_key: gallery
     disable_add: false

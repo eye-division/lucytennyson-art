@@ -5,7 +5,7 @@ collections_config:
   gallery:
     output: true
     path: ""
-    url: /gallery/:path/
+    url: /gallery/[slug]/
     _hide_content: true
     singular_name: Gallery
     singular_key: gallery

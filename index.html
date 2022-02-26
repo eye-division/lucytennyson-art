@@ -1,5 +1,9 @@
 ---
 layout: home
+main_image_path: "/assets/images/5414b866e7d5d.jpg"
+main_image_caption:
+show_galleries: true
+show_text: false
 showcarousel: false
 carousel:
   - image:
@@ -10,21 +14,45 @@ carousel:
       Three printmakers: Lucy Tennyson,  Nic Hamilton and Biddy Hudson
       exhibiting at the easyHotel in Summertown
     link:
+    show_blog: false
+    posts_number: 2
 _options:
-  image:
+  layout:
+    hidden: true
+  image_path:
+    uploads_dir: assets/images/:year
     width: 1200
     height: 1200
     resize_style: contain
     mime_type: image/jpeg
-_comments:
-  carousel: Edit the slideshow
-  link: Optional web link from the slide
-  caption: optional caption
+  main_image_path:
+    uploads_dir: assets/images/:year
+    width: 1200
+    height: 1200
+    resize_style: contain
+    mime_type: image/jpeg
+  content:
+    uploads_dir: assets/:year
+  _comments:
+    main_image_path: Cover image
+    main_image_caption: Alt text for cover image
+    carousel: Edit the slideshow
+    show_carousel: Show the slideshow
+    show_galleries: Show featured galleries
+    show_blog: Show your latest posts on the homepage
+    show_text: Write some introductory text below your carousel
+    posts_number: How many posts to show
+    alink: Optional link from the slide
+    caption: optional caption
 ---
 
-<div class="editable">
-    <p></p>
-    </div>
+{% if page.show_text %}
+
+  <div class="editable">
+        
+  </div>
+
+{% endif %} 
 
     {% if page.showcarousel %}
     <!-- <div class="two-thirds no-gutter"> -->
@@ -102,3 +130,38 @@ _comments:
       {% endif %}
     {% endfor %}
 </section>
+
+{% if page.show_galleries %}
+  <!-- Galleries -->
+  {% assign galleries = site.gallery | sort: 'gallery_date' | reverse %}
+
+  {% for gallery in galleries %}
+
+    {% if gallery.frontpage %}
+
+      <section class="gallery--cover {% if gallery.main_image_path %}has--cover{% endif %}" {% if gallery.main_image_path %}style="background-image: url({{ gallery.main_image_path | prepend: gallery.baseurl }});"{% endif %}>
+
+        <a href="{{ gallery.url }}">
+
+          <div class="scrim {% if gallery.main_image_path %}has--cover{% endif %}">
+            <article class="gallery--front">
+              <header class="gallery--header">
+                <h2 class="cover--title mb0">{{ gallery.frontpagetitle }}</h2>
+              </header>
+              {% if gallery.homepage_description_markdown %}
+                {{ gallery.homepage_description_markdown | markdownify }} <span class="post--readmore">View gallery  <svg class="icon icon--post"><use xlink:href="#icon-double_angle_right" /></svg></span>
+              {% endif %}
+            </article>
+          </div>
+        </a>
+      </section>
+
+    {% endif %}
+
+  {% endfor %}
+
+  <section>
+    <p><a href="/gallery/" class="post--readmore">View all galleries <svg class="icon icon--post"><use xlink:href="#icon-double_angle_right" /></svg></a></p>
+  </section>
+
+{% endif %}

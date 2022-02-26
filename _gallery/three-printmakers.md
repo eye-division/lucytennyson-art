@@ -1,10 +1,10 @@
 ---
-title: 'Three printmakers'
+title: 'Three printmakers at Artweeks 2022'
 display_title: true
 permalink: /three-printmakers/
 gallery_date:
-frontpage: false
-homepage_description_markdown: xxxxxxx
+frontpage: true
+homepage_description_markdown: 'Three printmakers at Artweeks 2022'
 display_image: true
 main_image_path: /uploads/canalbridge.jpg
 main_image_caption:

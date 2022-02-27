@@ -37,32 +37,32 @@ _inputs:
         - Grid
         - Row
   copy_html:
+    type: html
     label: Page text
     comment: Text on the home page
   show_copy:
     type: switch
     label: Show text on home page
     comment: yes or no
-_options:
+  show_carousel:
+    type: switch
+    label: Show slideshow
+  show_galleries:
+    type: switch
+    label: Show galleries
+    comment: Show featured galleries
   layout:
     hidden: true
-  image_path:
-    uploads_dir: assets/images/:year
-    width: 1200
-    height: 1200
-    resize_style: contain
-    mime_type: image/jpeg
+
 _comments:
   carousel: Edit the slideshow
-  show_carousel: Show the slideshow
-  show_galleries: Show featured galleries
   alink: Optional link from the slide
   caption: optional caption
 ---
 
 {% if page.show_copy %}
 
-  {{ copy_html }}
+  {{ page.copy_html }}
 
 {% endif %} 
 

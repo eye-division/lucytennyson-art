@@ -1,10 +1,12 @@
 ---
 layout: home
-main_image_path:
-main_image_caption: Artweeks 2022
+show_image: false
 show_galleries: true
 gallery_layout: Grid
+show_copy: true
 show_carousel: false
+main_image_path:
+main_image_caption: Artweeks 2022
 carousel:
   - image: /uploads/badge-2022b-city.jpg
     caption: >-
@@ -17,7 +19,7 @@ copy_html: >-
   printmakers at Artweeks 2022</a></p><p><a
   href="https://www.artweeks.org/v/nicholas-hamilton-biddy-hudson-opc-lucy-tennyson-opc"><img
   src="/uploads/logo.png" width="260" height="260" /></a></p>
-show_copy: true
+
 _inputs:
   main_image_path:
     type: image
@@ -60,6 +62,10 @@ _inputs:
   show_copy:
     type: switch
     label: Show text on home page
+    comment: yes or no
+  show_image:
+    type: switch
+    label: Show featured image on home page
     comment: yes or no
   show_carousel:
     type: switch

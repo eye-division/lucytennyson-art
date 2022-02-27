@@ -30,4 +30,4 @@ collections_config:
     add_options:
       - name: Add Gallery
         icon: add_photo_alternate
-        href: "cloudcannon::editor/:collections_dir/_gallery/.:extension"
+        href: "cloudcannon::editor/:collections_dir/_gallery/.:extension🆕"

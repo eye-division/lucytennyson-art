@@ -1,41 +1,31 @@
 ---
 layout: page
 title: Galleries
+display_title: true
 permalink: /gallery/
-main_image_path:
-main_image_caption:
-display_image: false
-frontpage: false
-description_markdown:
-homepage_description_markdown: Gallery
-frontpagetitle: Gallery
-archive:
-_options:
+gallery_layout: Grid
+limit_galleries: false
+_inputs:
+  permalink:
+    hidden: true 
   layout:
     hidden: true
-  permalink:
-    hidden: true
-  image_path:
-    uploads_dir: assets/images/:year
-    width: 1200
-    height: 1200
-    resize_style: contain
-    mime_type: image/jpeg
-  main_image_path:
-    uploads_dir: assets/images/:year
-    width: 1200
-    height: 1200
-    resize_style: contain
-    mime_type: image/jpeg
-  content:
-    uploads_dir: assets/:year
-_comments:
-  title: Gallery title
-  main_image_path: Image used to represent your gallery
-  display_image: Show featured image at the top of the page
-  frontpage: Show this gallery on the homepag
-  frontpagetitle: Title for homepage display
-  homepage_description_markdown: Text used on homepage if shown
+  display_title:
+    type: switch
+    label: Show page title at top
+  gallery_layout:
+    type: select
+    label: Gallery layout
+    comment: >-
+      Choose to display your galleries in a grid of columns and rows, or as big blocks across the page in rows
+    options:
+      values:
+        - Grid
+        - Row
+  limit_galleries:
+    type: switch
+    label: Only show galleries set for front page display
+    comment: You can set this on individual galleries
 ---
 
 <div class="editable">
@@ -47,16 +37,75 @@ _comments:
 <!-- order galleries by date -->
 {% assign galleries = site.gallery | sort: 'gallery_date' | reverse %}
 
-{% for gallery in galleries %}
+{% if page.gallery_layout == 'Grid' %}
 
-   <div class="gallery--box">
+  <section class="gallery--list">
 
-        <a href="{{ gallery.permalink }}" title="{{ gallery.title }}" class="gallery--link">
-          {% include img.html src=gallery.main_image_path width=200 height=200 fit=crop alt=gallery.title %}
-          <h4 class="cover--title mb0">{{ gallery.title }}</h4>
+    <!-- order galleries by date in a Grid -->
+   
+    {% for gallery in galleries %}
+
+      {% if page.limit_galleries %}
+
+        {% if gallery.frontpage %}
+
+          <div class="gallery--box">
+
+            <a href="{{ gallery.permalink }}" title="{{ gallery.title }}" class="gallery--link">
+              {% include img.html src=gallery.main_image_path width=200 height=200 fit=crop alt=gallery.title %}
+              <h4 class="cover--title mb0">{{ gallery.title }}</h4>
+            </a>
+
+          </div>
+
+        {% endif %}
+
+      {% else %}
+
+        <div class="gallery--box">
+
+          <a href="{{ gallery.permalink }}" title="{{ gallery.title }}" class="gallery--link">
+            {% include img.html src=gallery.main_image_path width=200 height=200 fit=crop alt=gallery.title %}
+            <h4 class="cover--title mb0">{{ gallery.title }}</h4>
+          </a>
+
+        </div>
+        
+      {% endif %}
+    
+    {% endfor %}
+
+  </section>
+
+{% endif %}
+
+<!-- Galleries in Row -->
+
+{% if page.gallery_layout == "Row" %}
+
+  {% for gallery in galleries %}
+
+    {% if gallery.frontpage %}
+
+      <section class="gallery--cover {% if gallery.main_image_path %}has--cover{% endif %}" {% if gallery.main_image_path %}style="background-image: url({{ gallery.main_image_path | prepend: gallery.baseurl }});"{% endif %}>
+
+        <a href="{{ gallery.url }}">
+
+          <div class="scrim {% if gallery.main_image_path %}has--cover{% endif %}">
+            <article class="gallery--front">
+              <header class="gallery--header">
+                <h2 class="cover--title mb0">{{ gallery.frontpagetitle }}</h2>
+              </header>
+              {% if gallery.homepage_description_markdown %}
+                {{ gallery.homepage_description_markdown | markdownify }} <span class="post--readmore">View gallery  <svg class="icon icon--post"><use xlink:href="#icon-double_angle_right" /></svg></span>
+              {% endif %}
+            </article>
+          </div>
         </a>
+      </section>
 
-   </div>
+    {% endif %}
 
-{% endfor %}
-</section>
+  {% endfor %}
+
+{% endif %}

@@ -5,9 +5,14 @@ collections:
     output: true
 
 collection_groups:
+
   - heading: Gallery
     collections:
       - gallery
+      - pages
+  - heading: Menu
+    collections: 
+      - data
 
 # Populates collections for navigation and metadata in the editor
 collections_config:
@@ -15,6 +20,8 @@ collections_config:
     icon: image
     sort:
       key: title
+    sort_options:
+      - key: title
     disable_add: false
     image_size: cover  
     image_key: main_image_path
@@ -23,3 +30,4 @@ collections_config:
     add_options:
       - name: Add Gallery
         icon: add_photo_alternate
+        href: "cloudcannon::editor/:collections_dir/_gallery/.:extension"

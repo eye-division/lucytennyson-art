@@ -46,18 +46,37 @@ _inputs:
   gallery_date:
     label: Gallery date
     comment: May be used to order your galleries on the gallery and home pages
+  display_title:
+    type: switch
+    label: Show gallery title at top of gallery
   display_image:
     type: switch
     label: Show main image at top of gallery
   thumb_crop:
     type: switch
     label: Crop thumbnail images
+  archive:
+    type: switch
+    label: Archive this gallery
+    comment: Archiving will keep your page, but hide it from the public    
   display_thumb_title:
     type: switch
     label: Display titles with thumbnails
   homepage_description_markdown:
     label: Home page description
     comment: This text is displayed on the home page 
+    options:
+      bold: true
+      format: p h2 h3 h4 h5 pre address div
+      italic: true
+      numberedlist: true
+      bulletedlist: true
+      image: true
+      link: true
+      styles: /css/editor.scss
+      center: center-this-text
+      left: align-left
+      right: align-right
   copy_html:
     type: html
     label: Gallery page text

@@ -1,6 +1,8 @@
 # Global CloudCannon configuration
 
-# collections:
+collections:
+  gallery:
+    output: true
 
 collection_groups:
   - heading: Gallery
@@ -11,6 +13,11 @@ collection_groups:
 collections_config:
   gallery: 
     icon: image
+    sort:
+      key: title
+    disable_add: false
+    image_size: cover  
+    image_key: main_image_path
     singular name: Gallery
     singular_key: gallery
     add_options:

@@ -2,27 +2,27 @@
 layout: home
 show_image: false
 show_galleries: true
-gallery_layout: Grid
 show_copy: true
 show_carousel: false
+gallery_layout: Grid
 main_image_path:
 main_image_caption: Artweeks 2022
-carousel:
-  - image: /uploads/badge-2022b-city.jpg
-    caption: >-
-      Three printmakers: Lucy Tennyson,  Nic Hamilton and Biddy Hudson
-      exhibiting at the easyHotel in Summertown
-    link:
 copy_html: >-
   <p class="center-this-text"><a
   href="https://www.artweeks.org/v/nicholas-hamilton-biddy-hudson-opc-lucy-tennyson-opc">Three
   printmakers at Artweeks 2022</a></p><p class="center-this-text"><a
   href="https://www.artweeks.org/v/nicholas-hamilton-biddy-hudson-opc-lucy-tennyson-opc"><img
   width="260" height="260" src="/uploads/logo.png" /></a></p>
+carousel:
+  - image: /uploads/badge-2022b-city.jpg
+    caption: >-
+      Three printmakers: Lucy Tennyson,  Nic Hamilton and Biddy Hudson
+      exhibiting at the easyHotel in Summertown
+    link:
 _inputs:
   main_image_path:
     type: image
-    label: Featured Image
+    label: Featured image
     comment: Main full width image for the page
     options:
       uploads_dir: assets/images/:year
@@ -36,16 +36,16 @@ _inputs:
     comment: Essential hidden text that describes your image
   gallery_layout:
     type: select
-    label: Choose gallery layout
-    comment: A grid of columns and rows, or big gallery blocks across the page in rows
+    label: Gallery layout
+    comment: Choose to display your galleries in a grid of columns and rows, or as big blocks across the page in rows
     options:
       values:
         - Grid
         - Row
   copy_html:
     type: html
-    label: Page text
-    comment: Text on the home page
+    label: Home page text
+    comment: This text appears at the top of your page
     options:
       bold: true
       format: p h2 h3 h4 h5 pre address div
@@ -60,24 +60,23 @@ _inputs:
       right: align-right
   show_copy:
     type: switch
-    label: Show text on home page
+    label: Show page text
     comment: yes or no
   show_image:
     type: switch
-    label: Show featured image on home page
-    comment: yes or no
+    label: Show featured image
   show_carousel:
     type: switch
     label: Show slideshow
   show_galleries:
     type: switch
     label: Show galleries
-    comment: Show featured galleries
   layout:
     hidden: true
+    
 _comments:
   carousel: Edit the slideshow
-  alink: Optional link from the slide
+  link: Optional link from the slide
   caption: optional caption
 ---
 

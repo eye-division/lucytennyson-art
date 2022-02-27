@@ -38,10 +38,10 @@ imagecdn:
 
 # Collections Example
 collections:
-    gallery:
-        output: true
-        permalink: /gallery/:path/
-        _hide_content: true
+  gallery:
+    output: true
+    permalink: /gallery/:path/
+    _hide_content: true
 
 # Defaults Example
 defaults:

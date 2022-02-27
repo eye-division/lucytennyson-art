@@ -1,4 +1,18 @@
 # Global CloudCannon configuration
 
+# collections:
+
+collection_groups:
+  - heading: Gallery
+    collections:
+      - gallery
+
 # Populates collections for navigation and metadata in the editor
 collections_config:
+  gallery: 
+    icon: image
+    singular name: Gallery
+    singular_key: gallery
+    add_options:
+      - name: Add Gallery
+        icon: add_photo_alternate

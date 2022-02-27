@@ -3,7 +3,7 @@ layout: home
 main_image_path: /assets/images/logo-800x800.jpg
 main_image_caption: Artweeks 2022
 show_galleries: true
-gallery_layout: Row
+gallery_layout: Grid
 show_carousel: false
 carousel:
   - image: /uploads/badge-2022b-city.jpg
@@ -43,6 +43,14 @@ _inputs:
     type: html
     label: Page text
     comment: Text on the home page
+    options:
+      bold: true
+      format: p h2 h3 h4 h5 pre address div
+      italic: true
+      numberedlist: true
+      bulletedlist: true
+      image: true
+      link: true
   show_copy:
     type: switch
     label: Show text on home page
@@ -116,82 +124,63 @@ _comments:
 
 {% endif %}
 
-<section class="gallery--list">
-
-  <!-- order galleries by date -->
-  {% assign galleries = site.gallery | sort: 'gallery_date' | reverse %}
-  
-  {% for gallery in galleries %}
-
-    {% if gallery.frontpage %}
-
-      <div class="gallery--box">
-
-        <a href="{{ gallery.permalink }}" title="{{ gallery.title }}" class="gallery--link">
-          {% include img.html src=gallery.main_image_path width=200 height=200 fit=crop alt=gallery.title %}
-          <h4 class="cover--title mb0">{{ gallery.title }}</h4>
-        </a>
-
-      </div>
-
-    {% endif %}
-  
-  {% endfor %}
-
-</section>
-
-
-<!-- Galleries -->
 {% assign galleries = site.gallery | sort: 'gallery_date' | reverse %}
 
-{% for gallery in galleries %}
+{% if page.gallery_layout == 'Grid' %}
 
-  {% if gallery.frontpage %}
+  <section class="gallery--list">
 
-    <section class="gallery--cover {% if gallery.main_image_path %}has--cover{% endif %}" {% if gallery.main_image_path %}style="background-image: url({{ gallery.main_image_path | prepend: gallery.baseurl }});"{% endif %}>
+    <!-- order galleries by date in a Grid -->
+    
+    
+    {% for gallery in galleries %}
 
-      <a href="{{ gallery.url }}">
+      {% if gallery.frontpage %}
 
-        <div class="scrim {% if gallery.main_image_path %}has--cover{% endif %}">
-          <article class="gallery--front">
-            <header class="gallery--header">
-              <h2 class="cover--title mb0">{{ gallery.frontpagetitle }}</h2>
-            </header>
-            {% if gallery.homepage_description_markdown %}
-              {{ gallery.homepage_description_markdown | markdownify }} <span class="post--readmore">View gallery  <svg class="icon icon--post"><use xlink:href="#icon-double_angle_right" /></svg></span>
-            {% endif %}
-          </article>
+        <div class="gallery--box">
+
+          <a href="{{ gallery.permalink }}" title="{{ gallery.title }}" class="gallery--link">
+            {% include img.html src=gallery.main_image_path width=200 height=200 fit=crop alt=gallery.title %}
+            <h4 class="cover--title mb0">{{ gallery.title }}</h4>
+          </a>
+
         </div>
-      </a>
-    </section>
 
-  {% endif %}
-
-{% endfor %}
-
-{% if page.show_blog %}
-
-  <section class="blog blog--home">
-
-      <div class="editable">
-        <h2>Latest news</h2>
-      </div>
-
-      <ul class="posts--list">
-
-        {% for post in site.posts limit:page.posts_number %}
-
-         {% unless post.categories contains 'Archive' %}
-
-          {% include post_excerpt.html %}
-
-        {% endunless %}
-
-        {% endfor %}
-
-      </ul>
-      <p><a href="/news/">Read all news&nbsp;&raquo;</a></p>
+      {% endif %}
+    
+    {% endfor %}
 
   </section>
 
 {% endif %}
+
+<!-- Galleries in Row -->
+
+{% if page.gallery_layout == "Row" %}
+
+  {% for gallery in galleries %}
+
+    {% if gallery.frontpage %}
+
+      <section class="gallery--cover {% if gallery.main_image_path %}has--cover{% endif %}" {% if gallery.main_image_path %}style="background-image: url({{ gallery.main_image_path | prepend: gallery.baseurl }});"{% endif %}>
+
+        <a href="{{ gallery.url }}">
+
+          <div class="scrim {% if gallery.main_image_path %}has--cover{% endif %}">
+            <article class="gallery--front">
+              <header class="gallery--header">
+                <h2 class="cover--title mb0">{{ gallery.frontpagetitle }}</h2>
+              </header>
+              {% if gallery.homepage_description_markdown %}
+                {{ gallery.homepage_description_markdown | markdownify }} <span class="post--readmore">View gallery  <svg class="icon icon--post"><use xlink:href="#icon-double_angle_right" /></svg></span>
+              {% endif %}
+            </article>
+          </div>
+        </a>
+      </section>
+
+    {% endif %}
+
+  {% endfor %}
+
+{% endif %} 

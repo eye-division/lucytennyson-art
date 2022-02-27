@@ -1,16 +1,6 @@
 ---
 layout: home
 main_image_path:
-_inputs:
-  main_image_path:
-    options: 
-      uploads_dir: assets/images/:year
-      width: 1200
-      height: 1200
-      resize_style: contain
-      mime_type: image/jpeg
-      comment: Main full width image for the page
-
 main_image_caption:
 show_galleries: false
 gallery_layout: 
@@ -23,6 +13,23 @@ carousel:
     link:
 show_blog: false
 posts_number: 2
+
+_inputs:
+  main_image_path:
+    type: image
+    label: Featured Image
+    comment: Main full width image for the page
+    options:
+      uploads_dir: assets/images/:year
+      width: 1200
+      height: 1200
+      resize_style: contain
+      mime_type: image/jpeg
+  main_image_caption:
+    type: text
+    label: Featured image description
+    comment: Essential hidden text that describes your image
+
 _options:
   layout:
     hidden: true
@@ -33,7 +40,6 @@ _options:
     resize_style: contain
     mime_type: image/jpeg
 _comments:
-  main_image_caption: Alt text for cover image
   carousel: Edit the slideshow
   show_carousel: Show the slideshow
   show_galleries: Show featured galleries

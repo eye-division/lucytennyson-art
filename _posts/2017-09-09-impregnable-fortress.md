@@ -2,10 +2,10 @@
 layout: post
 title: Impregnable Fortress
 date: 2017-09-09 15:21:00
-main_image_path: /assets/images/advert-impregnable.jpg
+main_image_path: 
 images:
-  - image_path: /assets/images/advert-impregnable.jpg
-    description: "Impregnable Fortress"
+  - image_path: 
+    description: 
 _options:
   main_image_path:
     width: 1200

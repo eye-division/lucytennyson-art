@@ -11,8 +11,8 @@ carousel:
       Three printmakers: Lucy Tennyson,  Nic Hamilton and Biddy Hudson
       exhibiting at the easyHotel in Summertown
     link:
-show_blog: false
-posts_number: 2
+copy_html:
+show_copy: true
 
 _inputs:
   main_image_path:
@@ -29,6 +29,21 @@ _inputs:
     type: text
     label: Featured image description
     comment: Essential hidden text that describes your image
+  gallery_layout:
+    type: select
+    label: Choose gallery layout
+    comment: A grid of columns and rows, or big gallery blocks across the page in rows
+    options:
+      values:
+        - Grid
+        - Row
+  copy_html:
+    label: Page text
+    comment: Text on the home page
+  show_copy:
+    type: switch
+    label: Show text on home page
+    comment: yes or no
 
 _options:
   layout:
@@ -43,14 +58,15 @@ _comments:
   carousel: Edit the slideshow
   show_carousel: Show the slideshow
   show_galleries: Show featured galleries
-  gallery_layout: 
-  show_blog: Show your latest posts on the homepage
-  posts_number: How many posts to show
   alink: Optional link from the slide
   caption: optional caption
 ---
 
-Content here
+{% if page.show_copy %}
+
+  {{ copy_html }}
+
+{% endif %} 
 
 {% if page.main_image_path %}
   <!-- parallax picture please -->
@@ -58,17 +74,9 @@ Content here
     {% assign alt_text = page.title %}
     {% if page.main_image_caption %} {% assign alt_text = page.main_image_caption %} {% endif %}
     {% include img.html src=page.main_image_path alt=alt_text %}
-    <figcaption>{{ alt_text }}</figcaption>
+
     </figure>
   {% endif %}
-
-{% if page.show_text %}
-
-  <div class="editable">
-        
-  </div>
-
-{% endif %} 
 
 {% if page.show_carousel and page.carousel %}
 

@@ -8,11 +8,11 @@ gallery_layout: Grid
 main_image_path:
 main_image_caption: Artweeks 2022
 copy_html: >-
-  <p class="center-this-text"><a
-  href="https://www.artweeks.org/v/nicholas-hamilton-biddy-hudson-opc-lucy-tennyson-opc">Three
-  printmakers at Artweeks 2022</a></p><p class="center-this-text"><a
+  <h3 class="center-this-text">Three printmakers at Artweeks 2022</h3><p
+  class="center-this-text"><a
   href="https://www.artweeks.org/v/nicholas-hamilton-biddy-hudson-opc-lucy-tennyson-opc"><img
-  width="260" height="260" src="/uploads/logo.png" /></a></p>
+  width="260" height="260" src="/uploads/logo.png" /></a></p><p
+  class="center-this-text">7th-15th May<br />at EasyHotel, Oxford</p>
 carousel:
   - image: /uploads/badge-2022b-city.jpg
     caption: >-
@@ -37,7 +37,9 @@ _inputs:
   gallery_layout:
     type: select
     label: Gallery layout
-    comment: Choose to display your galleries in a grid of columns and rows, or as big blocks across the page in rows
+    comment: >-
+      Choose to display your galleries in a grid of columns and rows, or as big
+      blocks across the page in rows
     options:
       values:
         - Grid
@@ -73,7 +75,6 @@ _inputs:
     label: Show galleries
   layout:
     hidden: true
-    
 _comments:
   carousel: Edit the slideshow
   link: Optional link from the slide

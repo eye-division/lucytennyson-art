@@ -10,7 +10,9 @@ archive: false
 gallery_date: 2022-02-27 00:00:00
 copy_html: >-
   <p>Three printmakers: Lucy Tennyson, Nic Hamilton and Biddy Hudson exhibiting
-  at the easyHotel in Summertown</p>
+  at the easyHotel in Summertown. <a
+  href="https://www.artweeks.org/v/nicholas-hamilton-biddy-hudson-opc-lucy-tennyson-opc">Visit
+  the Artweeks website for more information.</a></p>
 homepage_description_markdown: >-
   Three printmakers: Lucy Tennyson, Nic Hamilton and Biddy Hudson exhibiting at
   the easyHotel in Summertown

@@ -7,19 +7,21 @@ thumb_crop: true
 display_thumb_title: true
 frontpage: true
 archive: false
-gallery_date:
-copy_html: |
-  Three printmakers: Lucy Tennyson, Nic Hamilton and Biddy Hudson exhibiting at the easyHotel in Summertown
+gallery_date: 2022-02-27 00:00:00
+copy_html: >-
+  <p>Three printmakers: Lucy Tennyson, Nic Hamilton and Biddy Hudson exhibiting
+  at the easyHotel in Summertown</p>
 homepage_description_markdown: >-
-  Three printmakers: Lucy Tennyson, Nic Hamilton and Biddy Hudson
-  exhibiting at the easyHotel in Summertown
+  Three printmakers: Lucy Tennyson, Nic Hamilton and Biddy Hudson exhibiting at
+  the easyHotel in Summertown
 main_image_path: /uploads/canalbridge.jpg
-main_image_caption: 'Three printmakers Lucy Tennyson, Nic Hamilton and Biddy Hudson exhibiting at the easyHotel in Summertown'
+main_image_caption: >-
+  Three printmakers Lucy Tennyson, Nic Hamilton and Biddy Hudson exhibiting at
+  the easyHotel in Summertown
 images:
   - image_path: /uploads/bridge1.JPG
     image_title: Bridge
     image_description:
-
 _inputs:
   title:
     label: Gallery title
@@ -58,13 +60,13 @@ _inputs:
   archive:
     type: switch
     label: Archive this gallery
-    comment: Archiving will keep your page, but hide it from the public    
+    comment: Archiving will keep your page, but hide it from the public
   display_thumb_title:
     type: switch
     label: Display titles with thumbnails
   homepage_description_markdown:
     label: Home page description
-    comment: This text is displayed on the home page 
+    comment: This text is displayed on the home page
     options:
       bold: true
       format: p h2 h3 h4 h5 pre address div
@@ -95,7 +97,4 @@ _inputs:
       right: align-right
 ---
 
-
 <a href="cloudcannon:collections/{{ page.relative_path }}" class="editor-link">Edit</a>
-
-

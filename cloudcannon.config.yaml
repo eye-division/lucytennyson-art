@@ -1,0 +1,4 @@
+# Global CloudCannon configuration
+
+# Populates collections for navigation and metadata in the editor
+collections_config:

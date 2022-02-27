@@ -1,22 +1,34 @@
 // Google Fonts
-@import url('//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,600,300|Muli:600,800');
-/// Typography
-$base-font-family: ('Open Sans',  'Helvetica Neue', 'Helvetica', 'verdana', 'Arial', sans-serif); // $helvetica;
-$heading-font-family: ('Muli', 'Helvetica Neue', 'Helvetica', 'verdana', 'Arial', sans-serif); // $base-font-family;
-$subheading-font-family: ('Muli', 'Helvetica Neue', 'Helvetica', 'verdana', 'Arial', sans-serif);
+//@import url('//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,600,300|Muli:600,800');
+
+// Google Fonts
+@import url(//fonts.googleapis.com/css?family=Montserrat:300,400|Roboto+Condensed);
+
+/// Typography//
+//$base-font-family: ('Open Sans',  'Helvetica Neue', 'Helvetica', 'verdana', 'Arial', sans-serif); // $helvetica;
+//$heading-font-family: ('Muli', 'Helvetica Neue', 'Helvetica', 'verdana', 'Arial', sans-serif); // $base-font-family;
+//$subheading-font-family: ('Muli', 'Helvetica Neue', 'Helvetica', 'verdana', 'Arial', sans-serif);
 // Font Sizes
-$base-font-size: $em-base; // 16px
+
+
+$base-font-family: "Montserrat", "Century Gothic", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+// OR use ? $font-stack-system;
+$heading-font-family: ('Roboto Condensed', 'Helvetica Neue', 'Helvetica', 'verdana', 'Arial', sans-serif);
+$subheading-font-family: ('Roboto Condensed', 'Helvetica Neue', 'Helvetica', 'verdana', 'Arial', sans-serif);
+$site-title-font-family: $heading-font-family;
+$logo-font-family: $heading-font-family;
 
 // Adjust modular scale ratio
 $modular-scale-ratio: $minor-third;
 
 /// Line height
-$base-line-height: 1.8;
-$heading-line-height: 1.8;
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+$base-font-size: 1.05em; //16px
 
 // Other Sizes
 $base-border-radius: 3px;
-$base-spacing: $base-line-height * $em-base;
+$base-spacing: 1.5em;
 $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
@@ -62,7 +74,9 @@ $soundcloud: rgb(255, 58, 0);
 // Font colours
 $base-background-color: rgb(255, 255, 255);
 $base-font-color: $dark-gray;
-
+$action-color: $black;
+$action-hover-color: lighten($action-color,5%);
+$cta-color: darken($orange,0%);
 // link colours
 $action-color: $black;
 $highlight-color: tint($action-color, 33%);
@@ -74,22 +88,39 @@ $aaa-visited: rgb(128, 65, 128);
 // Gallery image hover
 $gallery-image-hover-opacity: 0.7;
 $gallery-image-hover-color: $medium-gray;
-
+// Animations
+$base-duration: 150ms;
+$base-timing: ease;
 // Borders
 $base-border-color: $medium-gray;
 $base-border: 1px solid $base-border-color;
 $base-border-radius: 3px !default;
+// Background Colors
+$viewport-background-color: $white;
+$base-background-color: $white;
+$page-background-color: $white;
 
+// Focus
+$focus-outline-color: transparentize($action-color, 0.4);
+$focus-outline-width: 3px;
+$focus-outline: $focus-outline-width solid $focus-outline-color;
+$focus-outline-offset: 2px;
 // navigation
 $navigation-padding: 1em;
-$navigation-background: $kbgray;
 $navigation-height: 30px;
 $navigation-submenu-padding: 1em;
 $navigation-submenu-width: 15em;
-// navigation colours
-$navigation-color: $black;
-$navigation-color-hover: $medium-gray;
-$navigation-active-link-color: transparentize(white, 0.5);
+
+$navigation-background: $white;
+$navigation-color: $medium-gray;
+$navigation-color-hover: $black;
+$navigation-active-link-color: $orange;
+
+// footer
+$footer-background: $white;
+$footer-color: $dark-gray;
+$footer-color-hover: $action-hover-color;
+$footer-active-link-color: $action-color;
 
 // drop down variables
 $dropdown-color: $base-font-color;
@@ -107,3 +138,23 @@ $dropdown-arrow-top-distance: 0;
 $form-box-shadow: inset 0 1px 3px rgba(rgb(0, 0, 0), 0.06);
 $form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
 
+// lightbox colours
+$lightbox-background: rgba($black, 0.8);
+$lightbox-color: $white;
+
+// Neat 2 grid
+$neat-grid: (
+  columns: 4,
+  gutter: 10px,
+);
+
+$small: (
+  columns: 4,
+  gutter: 10px,
+  media: 488px,
+);
+$large: (
+  columns: 4,
+  gutter: 10px,
+  media: 960px,
+);

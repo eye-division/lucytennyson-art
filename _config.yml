@@ -1,4 +1,3 @@
-
 # External gems - updated to plugins in jekyll v3.6
 plugins:
  # - jekyll-archives # Sorry, not GitHub pages friendly!
@@ -10,8 +9,8 @@ plugins:
    - jekyll-tagging-related_posts
 
 # Site settings
-title: Lucy Tennyson - artist
-subtitle:
+title: Lucy Tennyson 
+subtitle: Artist
 name: Lucy Tennyson
 description: Lucy Tennyson art gallery site
 # Base URL of site (i.e. /blog). It should always start with a slash,
@@ -21,6 +20,7 @@ baseurl: ""
 # the base hostname & protocol for your site
 url: "https://wealthy-dahlia.cloudvent.net"
 logo: "/assets/logo.png"
+show_logo: false
 headerlogo:
 email: a.ward@eyedivision.com
 

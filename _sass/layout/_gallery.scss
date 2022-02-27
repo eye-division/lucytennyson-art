@@ -1,44 +1,46 @@
-// -----------------------------------------------------------------------------
-// This file contains styles for gallery elements
-// -----------------------------------------------------------------------------
 
-/// 100% Gallery blocks
-.gallery-cover {
-    margin: 0 auto 1em auto;
+/// 100% width Gallery blocks
+.gallery--cover {
+    margin: 0 auto 2em auto;
     max-width: 1200px;
-    min-width: 800px;
     a {
         color: $action-color;
+        text-decoration: none;
         &:active,
         &:focus,
         &:hover {
             text-decoration: none;
-            color: $highlight-color;
+            color: darken($highlight-color,10%);
             .gallery {
                 background: rgba(255,255,255,1);
             }
         }
     }
 }
+.gallery--feature {
+  // featured image on gallery page
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 1em;
+}
+.gallery--link {
+    text-decoration: none;
+}
+.gallery--list {
 
-.gallery {
     /// make it a flexbox so items can be aligned vertically
-    @include display(flex);
-    @include align-items(flex-start);
-    @include flex-direction(row);
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    align-content: center;
 
-    // align-items: flex-end; // align bottom
-    @include flex-wrap(wrap);
-
-    // now, woah there, make it a grid like it's 2017
-
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-
-    @include media ($medium) {
-        //@include outer-container;
+    // now grid it
+    @supports (display: grid) {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     }
+
 
     a {
         img {
@@ -59,51 +61,41 @@
         &:focus,
         &:hover {
             text-decoration: none;
-            color: shade($action-color, 20%);
+            color: darken($action-color, 20%);
             h3 {
                 //color: $camouflage;
             }
         }
     }
 }
+.gallery--front {
+    padding: 0 1em 2em;
+    background: rgba(255, 255, 255, 0.9);
+}
 
-.gallery-box,
-.gallery-box-large {
-    padding-bottom: 1em;
+.gallery--header {
+    padding: 1em 0;
+}
+.gallery--box,
+.gallery--box-large {
+    @include grid-media ($small) {
+        flex: 0 1 auto;
+    }
+    margin: 1em;
     text-align: center;
-    @include media ($medium) {
-        @include span-columns(4);
-    }
 }
-.gallery-box-50 {
-    padding-bottom: 1em;
-    text-align: center;
-    @include media ($medium) {
-        @include span-columns(6);
-    }
+
+.gallery--caption {
+    font-style: normal;
 }
-.gallery-box-home {
-    @include media ($medium) {
-        @include span-columns(6);
-    }
-}
-.alpha {
-    @include media ($medium) {
-        clear: both;
-    }
-}
-.last {
-    @include media ($medium) {
-        @include omega();
-    }
-}
+
 /// Remove widths for grids
 @supports (display: grid) {
-  .gallery-box-50,
-  .gallery-box,
-  .gallery-box-large,
-  .gallery-box-home {
+
+  .gallery--box-50,
+  .gallery--box,
+  .gallery--box-large,
+  .gallery--box-home {
     width: auto;
-    float: none;
   }
 }

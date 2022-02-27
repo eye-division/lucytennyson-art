@@ -1,99 +1,197 @@
 ---
 layout: home
-showcarousel: true
+show_image: false
+show_galleries: true
+show_copy: true
+show_carousel: false
+gallery_layout: Grid
+main_image_path:
+main_image_caption: Artweeks 2022
+copy_html: >-
+  <h3 class="center-this-text">Three printmakers at Artweeks 2022</h3><p
+  class="center-this-text"><a
+  href="https://www.artweeks.org/v/nicholas-hamilton-biddy-hudson-opc-lucy-tennyson-opc"><img
+  width="260" height="260" src="/uploads/logo.png" /></a></p><p
+  class="center-this-text">7th-15th May<br />at EasyHotel, Oxford</p>
 carousel:
   - image: /uploads/badge-2022b-city.jpg
-    caption:
-    link: https://www.artweeks.org/festival/search
-_options:
-  image:
-    width: 1200
-    height: 1200
-    resize_style: contain
-    mime_type: image/jpeg
+    caption: >-
+      Three printmakers: Lucy Tennyson,  Nic Hamilton and Biddy Hudson
+      exhibiting at the easyHotel in Summertown
+    link:
+_inputs:
+  main_image_path:
+    type: image
+    label: Featured image
+    comment: Main full width image for the page
+    options:
+      uploads_dir: assets/images/:year
+      width: 1200
+      height: 1200
+      resize_style: contain
+      mime_type: image/jpeg
+  main_image_caption:
+    type: text
+    label: Featured image description
+    comment: Essential hidden text that describes your image
+  gallery_layout:
+    type: select
+    label: Gallery layout
+    comment: >-
+      Choose to display your galleries in a grid of columns and rows, or as big
+      blocks across the page in rows
+    options:
+      values:
+        - Grid
+        - Row
+  copy_html:
+    type: html
+    label: Home page text
+    comment: This text appears at the top of your page
+    options:
+      bold: true
+      format: p h2 h3 h4 h5 pre address div
+      italic: true
+      numberedlist: true
+      bulletedlist: true
+      image: true
+      link: true
+      styles: /css/editor.scss
+      center: center-this-text
+      left: align-left
+      right: align-right
+  show_copy:
+    type: switch
+    label: Show page text
+    comment: yes or no
+  show_image:
+    type: switch
+    label: Show featured image
+  show_carousel:
+    type: switch
+    label: Show slideshow
+  show_galleries:
+    type: switch
+    label: Show galleries
+  layout:
+    hidden: true
 _comments:
   carousel: Edit the slideshow
-  link: Optional web link from the slide
+  link: Optional link from the slide
   caption: optional caption
 ---
 
-<div class="editable">
-    <p></p>
-    </div>
+{% if page.show_copy %}
 
-    {% if page.showcarousel %}
-    <!-- <div class="two-thirds no-gutter"> -->
-    <section>
-      <div class="flexslider">
-          <ul class="slides">
-            {% for slides in page.carousel %}
-            <li>
-              {% if slides.link %}
-              <a href="{{ site.baseurl }}{{ slides.link }}" title="View project">
-              {% endif %}
-              {% include img.html src=slides.image width=960 alt=slides.caption %}
-              {% if slides.link %}
+  {{ page.copy_html }}
+
+{% endif %} 
+
+{% if page.main_image_path %}
+  <!-- parallax picture please -->
+    <figure>
+    {% assign alt_text = page.title %}
+    {% if page.main_image_caption %} {% assign alt_text = page.main_image_caption %} {% endif %}
+    {% include img.html src=page.main_image_path alt=alt_text %}
+
+    </figure>
+  {% endif %}
+
+{% if page.show_carousel and page.carousel %}
+
+  <section class="slideshow">
+
+    <div class="flexslider">
+
+      <ul class="slides">
+
+        {% for slides in page.carousel %}
+
+          <li>
+
+            {% if slides.alink %}
+              <a href="{{ site.baseurl }}{{ slides.alink }}" title="View project">
+            {% endif %}
+              
+            {% include img.html src=slides.image width=960 alt=slides.caption %}
+              
+            {% if slides.alink %}
               </a>
             {% endif %}
-              {% if slides.caption %}
-              <p class="flex-caption">{% if slides.link %}<a href="{{ site.baseurl }}{{ slides.link }}" title="View project">{% endif %}{{ slides.caption }}{% if slides.link %}&nbsp;<svg class="icon icon__white icon--readmore"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-double_angle_right" /></svg></a>{% endif %}</p>
-              {% endif %}
-            </li>
-            {% endfor %}
-          </ul>
-        </div>
-      </section>
-      <!-- </div> -->
-      {% endif %}
+              
+            {% if slides.caption %}
+              <p class="flex-caption">{% if slides.alink %}<a href="{{ site.baseurl }}{{ slides.alink }}" title="View project">{% endif %}{{ slides.caption }}{% if slides.alink %}&nbsp;<svg class="icon icon__white icon--readmore"><use xmlns:xlink="https://www.w3.org/1999/xlink" xlink:href="#icon-double_angle_right" /></svg></a>{% endif %}</p>
+            {% endif %}
 
-      <!-- Regular page promotions on front page -->
-      {% for section in site.pages %}
+          </li>
 
-      {% if section.frontpage %}
+        {% endfor %}
 
-        {% if section.main_image_path %}
-          <section class="gallery-cover has-cover" style="background-image: url({{ section.main_image_path }});">
-        {% else %}
-          <section class="gallery-cover has-cover" style="background-image: url('http://placekitten.com/g/1200/300');">
-        {% endif %}
-          <a href="{{ section.url | prepend: site.baseurl }}">
-            <div class="scrim has-cover">
-              <article class="gallery--front">
-                <header class="gallery-header">
-                  <h2 class="title">{{ section.frontpagetitle }}</h2>
-                </header>
-                {% if section.homepage_description_markdown %}
-                  {{ section.homepage_description_markdown | markdownify }}<br />
-                  <span class="readmore">Read more <span>{{nextPost.title}} <svg class="icon"><use xlink:href="#icon-double_angle_right" /></svg></span>
+      </ul>
 
-                {% endif %}
-            </span></article>
-          </div>
+    </div>
+
+  </section>
+
+{% endif %}
+
+{% assign galleries = site.gallery | sort: 'gallery_date' | reverse %}
+
+{% if page.gallery_layout == 'Grid' %}
+
+  <section class="gallery--list">
+
+    <!-- order galleries by date in a Grid -->
+    
+    
+    {% for gallery in galleries %}
+
+      {% if gallery.frontpage %}
+
+        <div class="gallery--box">
+
+          <a href="{{ gallery.permalink }}" title="{{ gallery.title }}" class="gallery--link">
+            {% include img.html src=gallery.main_image_path width=200 height=200 fit=crop alt=gallery.title %}
+            <h4 class="cover--title mb0">{{ gallery.title }}</h4>
           </a>
-        </section>
+
+        </div>
 
       {% endif %}
-
+    
     {% endfor %}
 
-      <!-- Galleries -->
-    {% for gallery in site.gallery %}
-      {% if gallery.frontpage %}
-        <section class="gallery-cover {% if gallery.main_image_path %}has-cover{% endif %}" {% if gallery.main_image_path %}style="background-image: url({{ gallery.main_image_path | prepend: gallery.baseurl }});"{% endif %}>
+  </section>
 
-          <a href="{{ gallery.url }}">
-            <div class="scrim {% if gallery.main_image_path %}has-cover{% endif %}">
+{% endif %}
+
+<!-- Galleries in Row -->
+
+{% if page.gallery_layout == "Row" %}
+
+  {% for gallery in galleries %}
+
+    {% if gallery.frontpage %}
+
+      <section class="gallery--cover {% if gallery.main_image_path %}has--cover{% endif %}" {% if gallery.main_image_path %}style="background-image: url({{ gallery.main_image_path | prepend: gallery.baseurl }});"{% endif %}>
+
+        <a href="{{ gallery.url }}">
+
+          <div class="scrim {% if gallery.main_image_path %}has--cover{% endif %}">
             <article class="gallery--front">
-              <header class="gallery-header">
-                <h2 class="title">{{ gallery.title }}</h2>
+              <header class="gallery--header">
+                <h2 class="cover--title mb0">{{ gallery.frontpagetitle }}</h2>
               </header>
-              {% if gallery.homepage_description_markdown  %}
-                {{ gallery.homepage_description_markdown | markdownify }}
+              {% if gallery.homepage_description_markdown %}
+                {{ gallery.homepage_description_markdown | markdownify }} <span class="post--readmore">View gallery  <svg class="icon icon--post"><use xlink:href="#icon-double_angle_right" /></svg></span>
               {% endif %}
-          </article>
+            </article>
           </div>
         </a>
       </section>
-      {% endif %}
-    {% endfor %}
-</section>
+
+    {% endif %}
+
+  {% endfor %}
+
+{% endif %}

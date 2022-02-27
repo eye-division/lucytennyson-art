@@ -4,7 +4,7 @@ main_image_path:
 main_image_caption:
 show_galleries: false
 show_text: false
-showcarousel: true
+show_carousel: false
 carousel:
   - image: /uploads/badge-2022b-city.jpg
     caption: >-
@@ -30,18 +30,20 @@ _options:
     mime_type: image/jpeg
   content:
     uploads_dir: assets/:year
-  _comments:
-    main_image_path: Cover image
-    main_image_caption: Alt text for cover image
-    carousel: Edit the slideshow
-    show_carousel: Show the slideshow
-    show_galleries: Show featured galleries
-    show_blog: Show your latest posts on the homepage
-    show_text: Write some introductory text below your carousel
-    posts_number: How many posts to show
-    alink: Optional link from the slide
-    caption: optional caption
+_comments:
+  main_image_path: Cover image
+  main_image_caption: Alt text for cover image
+  carousel: Edit the slideshow
+  show_carousel: Show the slideshow
+  show_galleries: Show featured galleries
+  show_blog: Show your latest posts on the homepage
+  show_text: Write some introductory text below your carousel
+  posts_number: How many posts to show
+  alink: Optional link from the slide
+  caption: optional caption
 ---
+
+Content here
 
 {% if page.main_image_path %}
   <!-- parallax picture please -->

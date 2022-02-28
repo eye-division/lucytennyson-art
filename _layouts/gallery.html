@@ -19,19 +19,21 @@ layout: default
 
       {% if page.main_image_caption %} {% assign alt_text = page.main_image_caption %} {% endif %}
 
-      <a href="{% include imgpath.html src=page.main_image_path %}" class="galleryphoto" data-lightbox="gallery" data-title="{{ page.main_image_caption }}">
-
-        {% include img.html src=page.main_image_path alt=alt_text %}
-
-      </a>
-
-      {% if page.main_image_caption %}
-        <figcaption>{{ alt_text }}</figcaption>
-      {% endif %}
+      {% include img.html src=page.main_image_path alt=alt_text %}
 
       </figure>
 
     {% endif %}
+    
+    {% if page.copy_html %}
+
+      <section class="main--content">
+
+        {{ page.copy_html }}
+      
+      </section>
+
+    {% endif %} 
 
     {% if page.images[0].image_path %}
 
@@ -75,29 +77,6 @@ layout: default
       {% endfor %}
 
     </section>
-
-    {% endif %}
-
-
-    <section class="main--content">
-
-      {% if content %}
-
-        {{ content }}
-
-      {% endif %}
-    </section>
-
-    {% if page.videos %}
-
-      {% for video in page.videos %}
-        {% if video.videoid %}
-          {% include youtubeplayer.html id=video.videoid %}
-          {% if video.description %}
-            <p class="description">{{ video.description }}</p>
-          {% endif %}
-        {% endif %}
-      {% endfor %}
 
     {% endif %}
 

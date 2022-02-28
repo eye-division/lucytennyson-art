@@ -2,6 +2,25 @@
 layout: page
 title: Thanks
 permalink: /thanks/
+main_image_path:
+main_image_caption: Artweeks 2022
+_inputs:
+  main_image_path:
+    type: image
+    label: Featured image
+    comment: Main full width image for the page
+    options:
+      uploads_dir: assets/images/:year
+      width: 1200
+      height: 1200
+      resize_style: contain
+      mime_type: image/jpeg
+  main_image_caption:
+    type: text
+    label: Featured image description
+    comment: Essential hidden text that describes your image
+  layout:
+    hidden: true
 ---
 
 Thanks for your message!

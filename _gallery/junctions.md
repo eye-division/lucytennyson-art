@@ -8,7 +8,7 @@ display_thumb_title: true
 frontpage: false
 archive: false
 gallery_date:
-copy_html: New work largely along the theme of roads and junctions
+copy_html: <p>New work largely along the theme of roads and junctions</p>
 homepage_description_markdown:
 main_image_path: /uploads/icecream-van-smaller.jpg
 main_image_caption:

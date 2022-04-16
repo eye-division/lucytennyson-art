@@ -16,7 +16,7 @@ copy_html: >-
 homepage_description_markdown: >-
   Three printmakers: Lucy Tennyson, Nic Hamilton and Biddy Hudson exhibiting at
   the easyHotel in Summertown
-main_image_path: /uploads/canalbridge.jpg
+main_image_path: /uploads/bridge1-1.JPG
 main_image_caption: >-
   Three printmakers Lucy Tennyson, Nic Hamilton and Biddy Hudson exhibiting at
   the easyHotel in Summertown

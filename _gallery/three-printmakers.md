@@ -24,6 +24,12 @@ images:
   - image_path: /uploads/bridge1.JPG
     image_title: Bridge
     image_description:
+  - image_path:
+    image_title:
+    image_description:
+  - image_path: /uploads/bridge2.JPG
+    image_title: Oxford bridge
+    image_description:
 _inputs:
   title:
     label: Gallery title

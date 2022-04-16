@@ -1,5 +1,5 @@
 ---
-title: New work pastel and gouache
+title: Pastel and gouache
 permalink: /junctions/
 display_title: true
 display_image: true
@@ -8,8 +8,7 @@ display_thumb_title: true
 frontpage: false
 archive: false
 gallery_date:
-copy_html: >-
-  New work largely along the theme of roads and junctions
+copy_html: <p>New work largely along the theme of roads and junctions</p>
 homepage_description_markdown:
 main_image_path: /uploads/icecream-van-smaller.jpg
 main_image_caption:
@@ -19,14 +18,13 @@ images:
     image_description: Mixed media - pastel and gouache
   - image_path: /uploads/cutteslowe-roundabout-crp1.jpg
     image_title: Cutteslowe roundabout
-    image_description: 'Mixed media - pastel, gouache, crayon'
+    image_description: Mixed media - pastel, gouache, crayon
   - image_path: /uploads/yorkpen.jpg
     image_title: York peninsula
     image_description: Pastel and gouache on paper
   - image_path: /uploads/kerala-dawn-smaller.jpg
     image_title: Kerala Dawn
     image_description: Pastel
-
 _inputs:
   title:
     label: Gallery title

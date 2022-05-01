@@ -12,7 +12,20 @@ copy_html: >-
   <p>Three printmakers: Lucy Tennyson, Nic Hamilton and Biddy Hudson exhibiting
   at the easyHotel in Summertown. <a
   href="https://www.artweeks.org/v/nicholas-hamilton-biddy-hudson-opc-lucy-tennyson-opc">Visit
-  the Artweeks website for more information.</a></p>
+  the Artweeks website for more
+  information.</a></p><div><div><div><p><strong>Nic Hamilton</strong> : My work
+  takes inspiration from the city of Oxford. Walking the lanes and alleys
+  between the colleges has for many years provided me with sites of potential
+  narrative content; finding resonance the 1940's films such as "The Third
+  Man".</p></div></div></div><div><div>Sites explored through drawing and
+  photography include the lanes and alleys of Oxford at twilight, the
+  interweaving of plant forms with structure at Oxford Botanic Gardens and
+  abstract work exploring the idea movement and
+  equilibrium.</div><div>&nbsp;</div><div>Lucy Tennyson: My theme is the bridges
+  and waterways of Oxford. I discovered another side and viewpoint of the city
+  &nbsp;when I started kayaking along its&nbsp; many waterways</div><div>My
+  Artweeks exhibition is based on a walk (or paddle) upstream starting at Folly
+  Bridge.</div></div>
 homepage_description_markdown: >-
   Three printmakers: Lucy Tennyson, Nic Hamilton and Biddy Hudson exhibiting at
   the easyHotel in Summertown
@@ -29,6 +42,12 @@ images:
     image_description:
   - image_path: /uploads/bridge2.JPG
     image_title: Oxford bridge
+    image_description:
+  - image_path: /uploads/nic-hamilton-pic.jpg
+    image_title: 'Nic Hamilton: Oxford lane'
+    image_description:
+  - image_path:
+    image_title:
     image_description:
 _inputs:
   title:

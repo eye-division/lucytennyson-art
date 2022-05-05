@@ -21,11 +21,11 @@ copy_html: >-
   photography include the lanes and alleys of Oxford at twilight, the
   interweaving of plant forms with structure at Oxford Botanic Gardens and
   abstract work exploring the idea movement and
-  equilibrium.</div><div>&nbsp;</div><div>Lucy Tennyson: My theme is the bridges
-  and waterways of Oxford. I discovered another side and viewpoint of the city
-  &nbsp;when I started kayaking along its&nbsp; many waterways</div><div>My
-  Artweeks exhibition is based on a walk (or paddle) upstream starting at Folly
-  Bridge.</div></div>
+  equilibrium.</div><div>&nbsp;</div><div><strong>Lucy Tennyson</strong>: My
+  theme is the bridges and waterways of Oxford. I discovered another side and
+  viewpoint of the city &nbsp;when I started kayaking along its&nbsp; many
+  waterways</div><div>My Artweeks exhibition is based on a walk (or paddle)
+  upstream starting at Folly Bridge.</div></div>
 homepage_description_markdown: >-
   Three printmakers: Lucy Tennyson, Nic Hamilton and Biddy Hudson exhibiting at
   the easyHotel in Summertown
@@ -35,7 +35,7 @@ main_image_caption: >-
   the easyHotel in Summertown
 images:
   - image_path: /uploads/bridge1.JPG
-    image_title: Bridge
+    image_title: 'Lucy Tennyson: Folly Bridge1'
     image_description:
   - image_path:
     image_title:

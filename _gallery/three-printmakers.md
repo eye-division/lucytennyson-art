@@ -37,8 +37,8 @@ images:
   - image_path: /uploads/bridge1.JPG
     image_title: 'Lucy Tennyson: Folly Bridge1'
     image_description:
-  - image_path:
-    image_title:
+  - image_path: /uploads/5--bridge.JPG
+    image_title: 'Lucy Tennyson: Bridge'
     image_description:
   - image_path: /uploads/bridge2.JPG
     image_title: Oxford bridge
@@ -46,8 +46,8 @@ images:
   - image_path: /uploads/nic-hamilton-pic.jpg
     image_title: 'Nic Hamilton: Oxford lane'
     image_description:
-  - image_path:
-    image_title:
+  - image_path: /uploads/nichamilton2.jpg
+    image_title: 'Nic Hamilton: Oxford lane '
     image_description:
 _inputs:
   title:
